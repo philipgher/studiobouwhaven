@@ -1,3 +1,11 @@
-# React-Static - Basic Template
+# Studio Bouwhaven portfolio website
 
-To use this template, run `react-static create` and use the `basic` template.
+Uses React-Static to build and route the application.
+
+
+Install dependencies with `yarn`
+
+
+Start with `yarn start`
+
+
