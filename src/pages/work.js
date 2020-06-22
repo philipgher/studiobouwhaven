@@ -9,20 +9,20 @@ const Work = () => {
 		<div>
 			<h1>{'It`s Work time.'}</h1>
 			<div>
-				<a href="#bottom" id="top">
+				<a href='#bottom' id='top'>
 					{'Scroll to bottom!'}
 				</a>
 			</div>
 			<br />
 			{'All Posts:'}
 			<ul>
-				{posts.map(post => (
+				{/* {posts.map(post => (
 					<li key={post.id}>
 						<Link to={`/Work/post/${post.id}/`}>{post.title}</Link>
 					</li>
-				))}
+				))} */}
 			</ul>
-			<a href="#top" id="bottom">
+			<a href='#top' id='bottom'>
 				{'Scroll to top!'}
 			</a>
 		</div>

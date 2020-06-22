@@ -1,9 +1,60 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { heroSlides } from '../content/HomeContent';
+import { USPs } from '../content/HomeContent';
+import { Projects, ProjectCategories } from '../content/Projects';
 
-const Home = () => (
-	<div>
-		<h1>{'Welcome to React-Static'}</h1>
-	</div>
-);
+const Home = () => {
+	const [currentHeroIndex, setCurrentHero] = useState(0);
+
+	useEffect(() => {
+		const heroInterval = setTimeout(() => {
+			setCurrentHero(currentHeroIndex === heroSlides.length - 1 ? 0 : currentHeroIndex + 1);
+		}, 5000);
+
+		return () => {
+			clearTimeout(heroInterval);
+		};
+	}, [currentHeroIndex]);
+
+	const currentHero = heroSlides[currentHeroIndex];
+
+	return (
+		<>
+			<section className='hero'>
+				<img className='hero-image' src={currentHero.image} alt={currentHero.alt} />
+				<div className='hero-text'>
+					<h1>{currentHero.title}</h1>
+					<h2>{currentHero.tagline}</h2>
+				</div>
+			</section>
+			<section className='usp-container'>
+				{USPs.map(usp => (
+					<div key={usp.title} className='usp'>
+						<h3>{usp.title}</h3>
+						<img className='usp-icon' src={usp.image} alt={usp.alt} />
+						<p>{usp.body}</p>
+					</div>
+				))}
+			</section>
+			<section className='projects-container'>
+				<h2>{'Onze projecten'}</h2>
+				<div className='project-categories'>
+					{Object.values(ProjectCategories).map(category => (
+						<h3 className='project-category' key={category}>{category}</h3>
+					))}
+				</div>
+				<div className='projects-list'>
+					{Projects.map((project) => (
+						<div key={project.title} className='project'>
+							<h3 className='project-title'>
+								{project.title}
+							</h3>
+						</div>
+					))}
+				</div>
+			</section>
+		</>
+	);
+};
 
 export default Home;

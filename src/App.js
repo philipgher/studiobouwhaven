@@ -4,20 +4,24 @@ import { Link, Router } from 'components/Router';
 import './app.css';
 
 const App = () => {
+	console.log('rerender');
+
+	if (document) {
+		document.body.style.setProperty('--inner-viewport', document.body.clientWidth);
+	}
+
 	return (
 		<Root>
 			<nav>
-				<Link to="/">{'Home'}</Link>
-				<Link to="/blog">{'Work'}</Link>
-				<Link to="/contact">{'Contact'}</Link>
+				<Link to='/'>{'Home'}</Link>
+				<Link to='/work'>{'Work'}</Link>
+				<Link to='/contact'>{'Contact'}</Link>
 			</nav>
-			<div className="content">
-				<React.Suspense fallback={<em>{'Loading...'}</em>}>
-					<Router>
-						<Routes path="*" />
-					</Router>
-				</React.Suspense>
-			</div>
+			<React.Suspense fallback={<em>{'Loading...'}</em>}>
+				<Router>
+					<Routes path='*' />
+				</Router>
+			</React.Suspense>
 		</Root>
 	);
 };

@@ -16,29 +16,29 @@
   "entry": "index.js",
   "plugins": [
     [
-      "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
       {
-        "location": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/pages"
+        "location": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\src\\pages"
       }
     ],
-    "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/node_modules/react-static-plugin-reach-router/browser.api.js",
-    "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/node_modules/react-static-plugin-sitemap/dist/node.api.js",
-    "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react"
+    "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven"
   ],
   "paths": {
-    "ROOT": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react",
-    "SRC": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src",
-    "DIST": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/dist",
-    "ASSETS": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/dist",
-    "PLUGINS": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/plugins",
-    "TEMP": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/tmp",
-    "ARTIFACTS": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/artifacts",
-    "PUBLIC": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/public",
-    "NODE_MODULES": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/node_modules",
-    "EXCLUDE_MODULES": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/node_modules",
-    "PACKAGE": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/package.json",
-    "HTML_TEMPLATE": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/dist/index.html",
-    "STATIC_DATA": "/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/dist/staticData"
+    "ROOT": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven",
+    "SRC": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\src",
+    "DIST": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\dist",
+    "ASSETS": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\dist",
+    "PLUGINS": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\plugins",
+    "TEMP": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\tmp",
+    "ARTIFACTS": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\artifacts",
+    "PUBLIC": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\public",
+    "NODE_MODULES": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules",
+    "PACKAGE": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\dist\\staticData"
   },
   "siteRoot": "/",
   "basePath": "",
