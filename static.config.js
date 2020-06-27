@@ -1,10 +1,10 @@
 import path from 'path';
-import { Projects } from './src/content/ProjectsContent';
+import { ProjectsContent } from './src/content/ProjectsContent';
 import formatProjectName from './src/utils/formatProjectName';
 
 export default {
 	getRoutes: () => {
-		return Projects.map(project => ({
+		return ProjectsContent.map(project => ({
 			path: `/project/${formatProjectName(project.title)}`,
 			template: 'src/containers/ProjectContainer',
 			getData: () => ({

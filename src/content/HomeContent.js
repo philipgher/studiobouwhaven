@@ -1,4 +1,3 @@
-import getAltForImage from '../utils/getAltForImage';
 import deBolder from './img/Projects/De Bolder/de bolder.jpg';
 import hotelLEuropeImg from './img/Projects/Hotel LEurope/hotel-de-leurope-amsterdam-by-night1.jpg';
 import villaKogelhof from './img/Projects/Villa Kogelhof/kogelhof.jpg';
@@ -29,19 +28,18 @@ export const USPs = [
 		title: 'Onze uitgangspunten',
 		body: 'Bouwen is een maatschappelijk relevante en verantwoordelijke activiteit. Het draagt in belangrijke mate bij aan de kwaliteit van het woon- werk- en leefklimaat van mensen.',
 		image: 'source',
+		alt: '',
 	},
 	{
 		title: 'Aanpak',
 		body: 'Wij vormen één aanspreekpunt, hanteren één contract en één prijs. Wij vormen samen met de architect de brug tussen alle externe partijen en de klant. Studio Bouwhaven levert het totaalpakket.',
 		image: 'source',
+		alt: '',
 	},
 	{
 		title: 'Werkzaamheden',
 		body: 'Consultancy, het geven van bouwadvies. Management van het proces, kosten en directie. En engineering, bestaande uit tekenwerk, calculatie, bestekken en rapportages.',
 		image: 'source',
+		alt: '',
 	},
 ];
-
-USPs.forEach((usp) => {
-	usp.alt = getAltForImage(usp.image);
-});

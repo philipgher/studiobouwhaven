@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'components/Router';
 import Masonry from 'react-masonry-css';
+import formatProjectName from '../../utils/formatProjectName';
 
 const ProjectGrid = ({ projects }) => {
-	console.log('wft');
+	console.log();
 
 	return (
 		<Masonry
@@ -11,12 +13,16 @@ const ProjectGrid = ({ projects }) => {
 			breakpointCols={3}
 		>
 			{projects.map((project) => (
-				<div key={project.title} className='project-list-tile'>
+				<Link
+					to={`project/${formatProjectName(project.title)}`}
+					key={project.title}
+					className='project-list-tile'
+				>
 					<img src={project.images[0].src} alt={project.images[0].alt} />
 					<h3 className='project-title'>
 						{project.title}
 					</h3>
-				</div>
+				</Link>
 			))}
 		</Masonry>
 	);
