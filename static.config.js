@@ -1,5 +1,5 @@
 import path from 'path';
-import { Projects } from './src/content/Projects';
+import { Projects } from './src/content/ProjectsContent';
 import formatProjectName from './src/utils/formatProjectName';
 
 export default {
