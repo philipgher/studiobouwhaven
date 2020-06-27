@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 22);
+/******/ 	return __webpack_require__(__webpack_require__.s = 24);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -133,31 +133,12 @@ module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-static");
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_0__["Link"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_0__["Router"]; });
-
-
-
-/***/ }),
-/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(9);
+var _typeof = __webpack_require__(10);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -196,7 +177,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(28);
+var _requireUniversalModule = __webpack_require__(30);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -211,7 +192,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(30);
+var _reportChunks = __webpack_require__(32);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -225,21 +206,21 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(13);
+var _propTypes = __webpack_require__(14);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(14);
+var _hoistNonReactStatics = __webpack_require__(15);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(31);
+var _vm = __webpack_require__(33);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _utils = __webpack_require__(10);
+var _utils = __webpack_require__(11);
 
-var _helpers = __webpack_require__(32);
+var _helpers = __webpack_require__(34);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -634,7 +615,26 @@ function universal(asyncModule) {
     report: _propTypes2["default"].func
   }, _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(29)(module)))
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-static");
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_0__["Link"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_0__["Router"]; });
+
+
 
 /***/ }),
 /* 6 */
@@ -647,11 +647,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _utils = __webpack_require__(10);
+var _utils = __webpack_require__(11);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(29)("" + id);
+    return __webpack_require__(31)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -667,55 +667,70 @@ module.exports = require("@reach/router");
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
-/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(41);
-/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(43);
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _content_img_studio_bouwhaven_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(22);
+/* harmony import */ var _content_img_studio_bouwhaven_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_content_img_studio_bouwhaven_png__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
 
 
 var App = function App() {
-  var urlLocation = document ? window.location : null;
-  console.log(urlLocation);
+  console.log('rerender');
+
+  if (typeof document !== 'undefined') {
+    document.body.style.setProperty('--inner-viewport', "".concat(document.body.scrollWidth, "px"));
+  }
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Root"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_2__[/* Link */ "a"], {
+    className: "nav-logo",
     to: "/"
-  }, 'Home'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_2__[/* Link */ "a"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _content_img_studio_bouwhaven_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Studio Bouwhaven total engineering logo"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_2__[/* Link */ "a"], {
     to: "/work"
   }, 'Work'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_2__[/* Link */ "a"], {
     to: "/contact"
-  }, 'Contact')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Suspense, {
+  }, 'Contact'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Suspense, {
     fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, 'Loading...')
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_2__[/* Router */ "b"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Routes"], {
     path: "*"
-  })))));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (App);
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/typeof");
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(9);
+var _typeof2 = __webpack_require__(10);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -875,31 +890,31 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 };
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static\\lib\\browser");
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -912,7 +927,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -928,22 +943,6 @@ var Contact = function Contact() {
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
-/* 17 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-var Home = function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, 'Welcome to React-Static'));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Home);
-
-/***/ }),
 /* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -951,9 +950,9 @@ var Home = function Home() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
 
 
 
@@ -978,24 +977,296 @@ var Work = function Work() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Post; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(8);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(0);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/utils/getAltForImage.js
+var getAltForImage = function getAltForImage(src) {
+  return '';
+};
+
+/* harmony default export */ var utils_getAltForImage = (getAltForImage);
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/HomeContent.js
+
+var heroSlides = [{
+  title: 'Studio Bouwhaven',
+  tagline: 'Bouwkundig adviesbureau met total engineering aanpak. Alle adviesdiensten voor het begeleiden van uw bouwproject in één hand.',
+  image: 'source',
+  alignment: 'primary'
+}, {
+  title: 'Studio Bouwhaven levert het totaalpakket',
+  tagline: '',
+  image: 'source',
+  alignment: 'secondary'
+}, {
+  title: 'Zo veel mogelijk waarde toevoegen aan de leefomgeving van de mens is ons doel.',
+  tagline: '',
+  image: 'source',
+  alignment: 'secondary'
+}];
+heroSlides.forEach(function (hero) {
+  hero.alt = utils_getAltForImage(hero.image);
+});
+var USPs = [{
+  title: 'Onze uitgangspunten',
+  body: 'Bouwen is een maatschappelijk relevante en verantwoordelijke activiteit. Het draagt in belangrijke mate bij aan de kwaliteit van het woon- werk- en leefklimaat van mensen.',
+  image: 'source'
+}, {
+  title: 'Aanpak',
+  body: 'Wij vormen één aanspreekpunt, hanteren één contract en één prijs. Wij vormen samen met de architect de brug tussen alle externe partijen en de klant. Studio Bouwhaven levert het totaalpakket.',
+  image: 'source'
+}, {
+  title: 'Werkzaamheden',
+  body: 'Consultancy, het geven van bouwadvies. Management van het proces, kosten en directie. En engineering, bestaande uit tekenwerk, calculatie, bestekken en rapportages.',
+  image: 'source'
+}];
+USPs.forEach(function (usp) {
+  usp.alt = utils_getAltForImage(usp.image);
+});
+// EXTERNAL MODULE: external "react-masonry-css"
+var external_react_masonry_css_ = __webpack_require__(23);
+var external_react_masonry_css_default = /*#__PURE__*/__webpack_require__.n(external_react_masonry_css_);
+
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/Projects/ProjectGrid.js
 
 
 
-function Post() {
-  var _useRouteData = Object(react_static__WEBPACK_IMPORTED_MODULE_1__["useRouteData"])(),
-      post = _useRouteData.post;
+var ProjectGrid_ProjectGrid = function ProjectGrid(_ref) {
+  var projects = _ref.projects;
+  console.log(projects);
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_masonry_css_default.a, {
+    className: "project-list",
+    columnClassName: "project-list-column",
+    breakpointCols: 3
+  }, projects.map(function (project) {
+    return /*#__PURE__*/external_react_default.a.createElement("div", {
+      key: project.title,
+      className: "project-list-tile"
+    }, /*#__PURE__*/external_react_default.a.createElement("img", {
+      src: project.images[0].src,
+      alt: project.images[0].alt
+    }), /*#__PURE__*/external_react_default.a.createElement("h3", {
+      className: "project-title"
+    }, project.title));
+  }));
+};
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_2__[/* Link */ "a"], {
-    to: "/blog/"
-  }, '< Back'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, post.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, post.body));
-}
+/* harmony default export */ var Projects_ProjectGrid = (ProjectGrid_ProjectGrid);
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/utils/importAll.js
+var importAll = function importAll(r) {
+  return r.keys().map(r);
+};
+
+/* harmony default export */ var utils_importAll = (importAll);
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/utils/getStringBetween.js
+var getStringBetween = function getStringBetween(string, firstChar, secondChar) {
+  return string.substring(string.indexOf(firstChar) + 1, string.indexOf(secondChar));
+};
+
+/* harmony default export */ var utils_getStringBetween = (getStringBetween);
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/ProjectsContent.js
+
+
+var ProjectCategories = {
+  all: 'All',
+  hotelsSportEnZorg: 'Hotels sport en zorg',
+  utiliteitbouw: 'Utiliteitbouw',
+  woningbouw: 'Woningbouw'
+};
+
+var ProjectsContent_getImagesForProject = function getImagesForProject(importFunc) {
+  var imageSources = utils_importAll(importFunc);
+  return imageSources.map(function (imageSource) {
+    return {
+      src: imageSource,
+      alt: utils_getStringBetween(imageSource, '/static/', '.')
+    };
+  });
+};
+
+var ProjectsContent = [{
+  title: 'Villa Kogelhof',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(49)),
+  category: [ProjectCategories.woningbouw]
+}, {
+  title: 'OWC Noordwestcluster',
+  description: 'Ector Hoogstad architecten heeft het ontwerp gemaakt voor de nieuwe onderwijscluster voor onderwijs en wetenschappen te Utrecht. Hierbij verzorgd Studio bouwhaven de kostenbegeleiding en technische ondersteuning bij de verschillende hoogwaardige maar tegelijk budget gevoelige onderdelen van het gebouw. Ook het bestaande Minnaert gebouw wordt geheel verbouwd en deels gerenoveerd.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(54)),
+  category: [ProjectCategories.utiliteitbouw]
+}, {
+  title: 'Villa Augustus',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(60)),
+  category: [ProjectCategories.hotelsSportEnZorg]
+}, {
+  title: 'Koningshof Gouda',
+  description: 'Voor het plan Koningshof te Gouda zijn 2 appartementenblokken en 6 rijen eengezinswoningen ontwikkeld. Blauwhoed heeft hiervoor een total engineering opdracht verstrekt waarin constructie installatie en geluid en brandadvies is opgenomen. Ook de budgettaire randvoorwaarden waren streng. Een uitgebreide zoektocht heeft uiteindelijk geleid tot een realistisch uitgangspunt voor de haalbaarheid . Momenteel zijn de werktekeningen geproduceerd en is de bouw gestart.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(64)),
+  category: [ProjectCategories.woningbouw]
+}, {
+  title: 'Elektrokern Schuurman',
+  description: 'Op basis van het schetsontwerp van de architect Bekkering Adams, is een investeringsraming gemaakt en is de exploitatie bekeken. De gewenste architectonische uitwerking is onder druk komen te staan evenals de financiële haalbaarheid. Ook is een ecologische traject met betonkern activering en bodemopslag systeem door Schuurman vastgesteld. Door optimalisatie van het ontwerp en de uitvoering van met name de constructie en de gevel is het project haalbaar gemaakt.<br />Taken: projectmanagement, de ontwerpbegeleiding en directievoering van het plan.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(67)),
+  category: [ProjectCategories.utiliteitbouw]
+}, {
+  title: 'Spa hotel L’Europe',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(70)),
+  category: [ProjectCategories.hotelsSportEnZorg]
+}, {
+  title: 'Gemengde toren Gouda Oost',
+  description: 'Het stedenbouwkundig ontwerp voor het zuidelijk stempel west en het structuurontwerp voor de Springerslocatie vormen samen een stedelijke ruimte met twee torens en ‘actieve’ plinten aan weerszijden van een plein en aan het uiteinde van de groene ruimte van de Oversteek. Dit is het zoekgebied voor een aantal niet-woonprogramma’s, maar ook voor bijzondere woonvormen. Concreet wordt gekeken naar de inpassingsmogelijkheden van begeleid wonen. In de plint komt een medisch centrum en commerciële ruimten.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(75)),
+  category: [ProjectCategories.woningbouw]
+}, {
+  title: 'De Bolder',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(81)),
+  category: [ProjectCategories.utiliteitbouw]
+}, {
+  title: 'Clubhuis tennisvereniging IJburg',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(87)),
+  category: [ProjectCategories.utiliteitbouw]
+}, {
+  title: 'Land van Barendreght',
+  description: 'Als ontwikkelend aannemer heeft Gebr. Blokland 221 woningen waarvan 91 appartementen ontwikkeld op de voormalige Haust hooimeier locatie in Barendrecht.<br />Het projectmanagement en sturing op de bouwsystemen en bouwkosten was de opdracht. Uiteindelijk is een zeer intensief overleg met de gemeente noodzakelijk geweest om alle s in goede banen te leiden. Met name faseringen ten gevolge van de crisis en overleg over d e de complete infrastructuur is zeer intensief geweest maar met succes afgerond.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(95)),
+  category: [ProjectCategories.woningbouw]
+}, {
+  title: 'Vredehofplein & bibliotheek Spijkenisse',
+  description: 'In 2005 begonnen met de engineering van de bibliotheek te Spijkenisse. Architect is Winny Maas van MVRDV, gevestigd te Rotterdam. Het gebouw kenmerkt zich door de toepassing van een glazen schil op houten spanten. Tussen de houten spanten en de glazen schil zijn tal van voorzieningen opgenomen (zonwering / sprinkler / verwarming). De openbare gebieden van de bibliotheek worden in het geheel uitgevoerd in steenstrips (vloeren / plafonds / wanden / trappen). De boekenkasten worden uitgevoerd in KLP (gerecycled kunststof).<br />Samen met architect MVRDV is het ambitieuze plan voor de boekenberg en 40 appartementen op de parkeergarage in het centrum van Spijkenisse uitgewerkt. De opdracht behelsde de ontwerp en kostenbegeleiding en het maken van de bouwaanvraag, bestek en werktekeningen. Het project is inmiddels opgeleverd.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(100)),
+  category: [ProjectCategories.woningbouw, ProjectCategories.utiliteitbouw]
+}, {
+  title: 'Clubhuis Rijswijkse Golfclub',
+  description: 'Het nieuwe clubhuis van de Rijswijkse Golfclub is samen met architect Wolbrant van der Vlis ontworpen en in een total engineering constructie compleet uitgewerkt, aanbesteed en begeleid. De ambities van de golfclub stonden in grote spanning met de stedenbouwkundige randvoorwaarden. Toch is er een efficiënt, fraai en bijzonder clubhuis van gemaakt.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(108)),
+  category: [ProjectCategories.utiliteitbouw]
+}, {
+  title: 'MC de Grebbe',
+  description: 'Samen met Grassodenridder architecten werkt Studio Bouwhaven aan het ontwerp en realisatie van het medisch centrum De Grebbe te Bergen op Zoom. Door Studiobouwhaven worden de volgende werkzaamheden verricht:<br />Bouwkundige , constructieve en installatietechnische engineering in alle fasen van het bouwproces, bouwkosten begeleiding en aanbesteding, alsmede de directievoering tijdens de uitvoering. Het gebouw is inmiddels naar tevredenheid van de opdrachtgevers opgeleverd.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(111)),
+  category: [ProjectCategories.hotelsSportEnZorg]
+}, {
+  title: 'Merlet college Cuijck',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(114)),
+  category: [ProjectCategories.utiliteitbouw]
+}, {
+  title: 'Sociale werkplaats Haegheflor',
+  description: 'De Haeghe groep heeft het voormalig kassencomplex van Valstar aan de Orberlaan in monster aangekocht om daar de nieuwe sociale werkplaats in te richten. Naast de verbouw en aanpassing van de kassen en de pootlijn moeten ook werkplaatsen, verwerkingsruimten en faciliteiten voor de medewerkers van Haeghe flor worden gemaakt. De bouw moet openbaar worden aanbesteed om te komen tot een design en build realisatie door een aannemer. Tevens is de planning bijzonder strak in verband met de oplevering van de oude locatie.<br />Taken: Ontwerp, TOTAL ENGINEERING met projectmanagement, kostenbegeleiding, ontwerp en bouwbegeleiding.',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(117)),
+  category: [ProjectCategories.hotelsSportEnZorg]
+}, {
+  title: 'Villa Bergen',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(120)),
+  category: [ProjectCategories.woningbouw]
+}, {
+  title: 'Baltic Tower - Poznan, Poland',
+  description: '',
+  images: ProjectsContent_getImagesForProject(__webpack_require__(125)),
+  category: [ProjectCategories.utiliteitbouw]
+}];
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/Projects/Projects.js
+
+
+
+
+
+var Projects_Projects = function Projects() {
+  var _useState = Object(external_react_["useState"])(ProjectsContent),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      activeProjects = _useState2[0],
+      setActiveProjects = _useState2[1];
+
+  console.log(ProjectsContent);
+
+  var handleClickCategory = function handleClickCategory(category) {
+    if (category === ProjectCategories.all) {
+      setActiveProjects(ProjectsContent);
+      return;
+    }
+
+    setActiveProjects(ProjectsContent.filter(function (project) {
+      return project.category.includes(category);
+    }));
+  };
+
+  return /*#__PURE__*/external_react_default.a.createElement("section", {
+    className: "projects-container"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, 'Onze projecten'), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "project-categories"
+  }, Object.values(ProjectCategories).map(function (category) {
+    return /*#__PURE__*/external_react_default.a.createElement("button", {
+      key: category,
+      onClick: function onClick() {
+        return handleClickCategory(category);
+      }
+    }, /*#__PURE__*/external_react_default.a.createElement("h4", {
+      className: "project-category"
+    }, category));
+  })), /*#__PURE__*/external_react_default.a.createElement(Projects_ProjectGrid, {
+    projects: activeProjects
+  }));
+};
+
+/* harmony default export */ var components_Projects_Projects = (Projects_Projects);
+// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/pages/index.js
+
+
+
+
+
+
+var pages_Home = function Home() {
+  var _useState = Object(external_react_["useState"])(0),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      currentHeroIndex = _useState2[0],
+      setCurrentHero = _useState2[1];
+
+  Object(external_react_["useEffect"])(function () {
+    var heroInterval = setTimeout(function () {
+      setCurrentHero(currentHeroIndex === heroSlides.length - 1 ? 0 : currentHeroIndex + 1);
+    }, 5000);
+    return function () {
+      clearTimeout(heroInterval);
+    };
+  }, [currentHeroIndex]);
+  var currentHero = heroSlides[currentHeroIndex];
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, /*#__PURE__*/external_react_default.a.createElement("section", {
+    className: "hero"
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    className: "hero-image",
+    src: currentHero.image,
+    alt: currentHero.alt
+  }), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "hero-text"
+  }, /*#__PURE__*/external_react_default.a.createElement("h1", null, currentHero.title), /*#__PURE__*/external_react_default.a.createElement("h2", null, currentHero.tagline))), /*#__PURE__*/external_react_default.a.createElement("section", {
+    className: "usp-container"
+  }, USPs.map(function (usp) {
+    return /*#__PURE__*/external_react_default.a.createElement("div", {
+      key: usp.title,
+      className: "usp"
+    }, /*#__PURE__*/external_react_default.a.createElement("h3", null, usp.title), /*#__PURE__*/external_react_default.a.createElement("img", {
+      className: "usp-icon",
+      src: usp.image,
+      alt: usp.alt
+    }), /*#__PURE__*/external_react_default.a.createElement("p", null, usp.body));
+  })), /*#__PURE__*/external_react_default.a.createElement(components_Projects_Projects, null));
+};
+
+/* harmony default export */ var pages = __webpack_exports__["default"] = (pages_Home);
 
 /***/ }),
 /* 20 */
@@ -1011,7 +1282,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _reactStatic = __webpack_require__(3);
+var _reactStatic = __webpack_require__(4);
 
 var _router = __webpack_require__(7);
 
@@ -1133,22 +1404,34 @@ module.exports = require("react-hot-loader");
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(23);
-__webpack_require__(25);
-module.exports = __webpack_require__(33);
-
+module.exports = __webpack_require__.p + "static/studio bouwhaven.e389e6fc.png";
 
 /***/ }),
 /* 23 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-masonry-css");
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(25);
+__webpack_require__(27);
+module.exports = __webpack_require__(35);
+
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(24)["default"];
+var plugins = __webpack_require__(26)["default"];
 
-var _require = __webpack_require__(12),
+var _require = __webpack_require__(13),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
@@ -1156,7 +1439,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1167,6 +1450,10 @@ __webpack_require__.r(__webpack_exports__);
  // Plugins
 
 var plugins = [{
+  location: "__react_static_root__/node_modules/react-static-plugin-sass",
+  plugins: [],
+  hooks: {}
+}, {
   location: "__react_static_root__/node_modules/react-static-plugin-source-filesystem",
   plugins: [],
   hooks: {}
@@ -1187,17 +1474,17 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(12),
+var _require = __webpack_require__(13),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(26),
+var _require2 = __webpack_require__(28),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1206,7 +1493,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1218,10 +1505,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
-
-
 
 
 
@@ -1246,7 +1531,7 @@ var universalOptions = {
 var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/404.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 15))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 16))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1254,7 +1539,7 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/404.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(15);
+    return /*require.resolve*/(16);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/404";
@@ -1264,7 +1549,7 @@ t_0.template = '__react_static_root__/src/pages/404.js';
 var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/contact.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/contact */).then(__webpack_require__.bind(null, 16))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/contact */).then(__webpack_require__.bind(null, 17))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1272,7 +1557,7 @@ var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/contact.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(16);
+    return /*require.resolve*/(17);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/contact";
@@ -1282,7 +1567,7 @@ t_1.template = '__react_static_root__/src/pages/contact.js';
 var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 17))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 19))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1290,7 +1575,7 @@ var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(17);
+    return /*require.resolve*/(19);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/index";
@@ -1314,39 +1599,20 @@ var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return "__react_static_root__/src/pages/work";
   }
 }), universalOptions);
-t_3.template = '__react_static_root__/src/pages/work.js';
-var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
-  id: "__react_static_root__/src/containers/Post",
-  load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/containers/Post */).then(__webpack_require__.bind(null, 19))]).then(function (proms) {
-      return proms[0];
-    });
-  },
-  path: function path() {
-    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/containers/Post');
-  },
-  resolve: function resolve() {
-    return /*require.resolve*/(19);
-  },
-  chunkName: function chunkName() {
-    return "__react_static_root__/src/containers/Post";
-  }
-}), universalOptions);
-t_4.template = '__react_static_root__/src/containers/Post'; // Template Map
+t_3.template = '__react_static_root__/src/pages/work.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   '__react_static_root__/src/pages/404.js': t_0,
   '__react_static_root__/src/pages/contact.js': t_1,
   '__react_static_root__/src/pages/index.js': t_2,
-  '__react_static_root__/src/pages/work.js': t_3,
-  '__react_static_root__/src/containers/Post': t_4
+  '__react_static_root__/src/pages/work.js': t_3
 }); // Not Found Template
 
 var notFoundTemplate = "__react_static_root__/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1375,7 +1641,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1402,7 +1668,7 @@ var _extends = Object.assign || function (target) {
 
 exports["default"] = requireUniversalModule;
 
-var _utils = __webpack_require__(10);
+var _utils = __webpack_require__(11);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -1586,7 +1852,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -1614,16 +1880,16 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 29;
+webpackContext.id = 31;
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof = __webpack_require__(9);
+var _typeof = __webpack_require__(10);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1651,7 +1917,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(13);
+var _propTypes = __webpack_require__(14);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -1726,13 +1992,13 @@ ReportChunks.childContextTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = require("vm");
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1743,11 +2009,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(14);
+var _hoistNonReactStatics = __webpack_require__(15);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(5);
+var _index = __webpack_require__(3);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -1799,28 +2065,28 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(34);
+var _interopRequireWildcard = __webpack_require__(36);
 
-var _interopRequireDefault = __webpack_require__(35);
+var _interopRequireDefault = __webpack_require__(37);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(36));
+var _extends2 = _interopRequireDefault(__webpack_require__(38));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(37));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(39));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(38);
+var _useStaticInfo = __webpack_require__(40);
 /* eslint-disable import/no-dynamic-require */
 
 
@@ -1841,7 +2107,7 @@ function Suspense(_ref) {
 React.Suspense = Suspense;
 React["default"].Suspense = Suspense;
 
-var App = __webpack_require__(39)["default"];
+var App = __webpack_require__(41)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -1854,48 +2120,48 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 
 
  // Your top level component
@@ -1921,10 +2187,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(42)(module)))
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -1954,23 +2220,23 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(42)(false);
+exports = module.exports = __webpack_require__(44)(false);
 // Imports
-var urlEscape = __webpack_require__(43);
-var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(44));
-var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(45));
-var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(46));
+var urlEscape = __webpack_require__(45);
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(46));
+var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(47));
+var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(48));
 
 // Module
-exports.push([module.i, "* {\r\n\tscroll-behavior: smooth;\r\n}\r\n\r\n@font-face {\r\n\tfont-family: 'OpenSans Light';\r\n\tsrc: url(" + ___CSS_LOADER_URL___0___ + ") format('woff');\r\n}\r\n\r\n@font-face {\r\n\tfont-family: 'OpenSans Regular';\r\n\tsrc: url(" + ___CSS_LOADER_URL___1___ + ") format('woff');\r\n}\r\n\r\n@font-face {\r\n\tfont-family: 'OpenSans Extra Bold';\r\n\tsrc: url(" + ___CSS_LOADER_URL___2___ + ") format('woff');\r\n}\r\n\r\nbody {\r\n\tfont-family:\r\n\t\t'OpenSans Regular',\r\n\t\t'HelveticaNeue-Light',\r\n\t\t'Helvetica Neue Light',\r\n\t\t'Helvetica Neue',\r\n\t\tHelvetica,\r\n\t\tArial,\r\n\t\t'Lucida Grande',\r\n\t\tsans-serif;\r\n\tfont-size: 16px;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n\r\na {\r\n\tcolor: inherit;\r\n\ttext-decoration: none;\r\n}\r\n\r\nimg {\r\n\tmax-width: 100%;\r\n}\r\n\r\nnav {\r\n\twidth: 100%;\r\n\tbackground: #108db8;\r\n}\r\n\r\nnav a {\r\n\tcolor: white;\r\n\tpadding: 1rem;\r\n\tdisplay: inline-block;\r\n}\r\n\r\nnav a .active::after {\r\n\tdisplay: block;\r\n\tcontent: '';\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\theight: 1px;\r\n\tbackground-color: black;\r\n}\r\n\r\n.content {\r\n\tpadding: 1rem;\r\n}\r\n", ""]);
+exports.push([module.i, "*{scroll-behavior:smooth}@font-face{font-family:'OpenSans Light';src:url(" + ___CSS_LOADER_URL___0___ + ") format(\"woff\")}@font-face{font-family:'OpenSans Regular';src:url(" + ___CSS_LOADER_URL___1___ + ") format(\"woff\")}@font-face{font-family:'OpenSans Extra Bold';src:url(" + ___CSS_LOADER_URL___2___ + ") format(\"woff\")}body{--inner-viewport: 100%;font-family:'OpenSans Regular',\r 'HelveticaNeue-Light',\r 'Helvetica Neue Light',\r 'Helvetica Neue',\r Helvetica,\r Arial,\r 'Lucida Grande',\r sans-serif;font-size:16px;margin:0;overflow-x:hidden;padding:0}a{color:inherit;text-decoration:none}img{max-width:100%;-o-object-fit:contain;object-fit:contain}button{background-color:unset;border:0;font:unset;padding:0;text-align:unset}button:hover{cursor:pointer}button:active,button:focus{border:0;outline:none}h1,h2,h3,h4,h5,h6{margin:0}nav{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-between;padding:20px;position:absolute}nav a{display:inline-block;padding:1rem}nav a .active::after{background-color:black;content:'';display:block;height:1px;position:relative;width:100%}.nav-logo{align-content:center;display:flex;padding:0;width:150px}.hero{align-items:center;display:flex;height:100vh;justify-content:center;overflow:hidden;text-align:center;width:var(--inner-viewport)}.hero-text{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;position:relative;width:50%}.hero-image{left:0;-o-object-fit:contain;object-fit:contain;position:absolute;top:0;width:var(--inner-viewport)}.usp-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-between;margin:100px auto 200px}.usp{align-items:center;background-color:grey;display:flex;flex-direction:column;height:200px;text-align:center;width:20%}.usp-icon{-o-object-fit:contain;object-fit:contain;width:70%}.projects-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);margin:100px auto 200px}.project-categories{display:flex}.project-category{padding:10px 20px 10px 0}.project-list{display:flex;margin-left:-30px;width:auto}.project-list-column{background-clip:padding-box;padding-left:30px}.projects-list-tile{background:grey;margin-bottom:30px}\n", ""]);
 
 
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2061,7 +2327,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2087,22 +2353,915 @@ module.exports = function escape(url, needQuotes) {
 };
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/OpenSans-Light.05c88e41.woff";
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/OpenSans-Regular.c8ffdeb3.woff";
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/OpenSans-ExtraBold.177b9a28.woff";
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./kogelhof.jpg": 50,
+	"./villa kogelhof 2.jpg": 51,
+	"./villa kogelhof 3.jpg": 52,
+	"./villa-kogelhof.jpg": 53
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 49;
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/kogelhof.07908970.jpg";
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa kogelhof 2.d7c35c77.jpg";
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa kogelhof 3.b5365c5a.jpg";
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa-kogelhof.173f75bf.jpg";
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./owc noordwestcluster 1.jpg": 55,
+	"./owc noordwestcluster 2.jpg": 56,
+	"./owc.jpg": 57,
+	"./owc2.jpg": 58,
+	"./owc3.jpg": 59
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 54;
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/owc noordwestcluster 1.3103c9bf.jpg";
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/owc noordwestcluster 2.7809c8c0.jpg";
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/owc.cd07b11b.jpg";
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/owc2.f73d5405.jpg";
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/owc3.5399f1ae.jpg";
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./Villa-Augustus_in-de-watertoren-is-het-hotel-gerealiseerd.jpg": 61,
+	"./villa augustus 2.jpg": 62,
+	"./villa augustus.jpg": 63
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 60;
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/Villa-Augustus_in-de-watertoren-is-het-hotel-gerealiseerd.bb2dcbc1.jpg";
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa augustus 2.2e88f720.jpg";
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa augustus.b56aad5b.jpg";
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./koningshof gouda 2.jpg": 65,
+	"./koningshof gouda.jpg": 66
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 64;
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/koningshof gouda 2.850d2cec.jpg";
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/koningshof gouda.0b8fb285.jpg";
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./elektrokern schuurman 2.jpg": 68,
+	"./elektrokern schuurman.jpg": 69
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 67;
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/elektrokern schuurman 2.54924b5b.jpg";
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/elektrokern schuurman.2c360a43.jpg";
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./hotel l europe amsterdam.jpg": 71,
+	"./hotel-de-leurope-amsterdam-by-night1.jpg": 72,
+	"./hotelleurope.jpg": 73,
+	"./spa hotel l europe.jpg": 74
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 70;
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/hotel l europe amsterdam.54fbf662.jpg";
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/hotel-de-leurope-amsterdam-by-night1.d827d1e9.jpg";
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/hotelleurope.aeba4320.jpg";
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/spa hotel l europe.01cb314f.jpg";
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./gemende toren gouda oost.png": 76,
+	"./gouda toren.png": 77,
+	"./gouda-oost.jpg": 78,
+	"./toren gouda oost render.jpg": 79,
+	"./torenGouda.jpg": 80
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 75;
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/gemende toren gouda oost.8b5d2817.png";
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/gouda toren.4844b66d.png";
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/gouda-oost.dbbe096b.jpg";
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/toren gouda oost render.2578f4c6.jpg";
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/torenGouda.f02aebe3.jpg";
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./bolder.jpeg": 82,
+	"./de bolder 2.jpg": 83,
+	"./de bolder 3.jpg": 84,
+	"./de bolder 4.jpg": 85,
+	"./de bolder.jpg": 86
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 81;
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/bolder.54aad5f6.jpeg";
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/de bolder 2.210a51e9.jpg";
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/de bolder 3.929aed91.jpg";
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/de bolder 4.19ecb6d5.jpg";
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/de bolder.45d2120a.jpg";
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./1280X720img-high13844244835426.jpg": 88,
+	"./couch-tennisclub-ijburg-m121113-m2.jpg": 89,
+	"./ijbur.jpg": 90,
+	"./ijburg-1140x500.jpeg": 91,
+	"./ijburg.jpeg": 92,
+	"./ijburg.jpg": 93,
+	"./mvrdv-pepijn-bakker-couch-5.jpg": 94
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 87;
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/1280X720img-high13844244835426.be9581ef.jpg";
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/couch-tennisclub-ijburg-m121113-m2.3b0eee5b.jpg";
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/ijbur.ae5e8561.jpg";
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/ijburg-1140x500.73fc83ce.jpeg";
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/ijburg.2e2d56dc.jpeg";
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/ijburg.ff05d30a.jpg";
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/mvrdv-pepijn-bakker-couch-5.8af7974f.jpg";
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./land van barendrecht 2.jpg": 96,
+	"./land van barendreght 2.jpg": 97,
+	"./land van barendreght 3.jpg": 98,
+	"./land van barendreght.jpg": 99
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 95;
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/land van barendrecht 2.766483e5.jpg";
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/land van barendreght 2.b6e01572.jpg";
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/land van barendreght 3.3647f7b9.jpg";
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/land van barendreght.155840a7.jpg";
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./BookMountain2.jpeg": 101,
+	"./bibliotheek-mvrdv-spijkenisse-5.jpeg": 102,
+	"./boekenberg bibliotheek spijkenisse 2.jpg": 103,
+	"./boekenberg bibliotheek spijkenisse.jpg": 104,
+	"./boekenberk bookmountain.jpg": 105,
+	"./spijkenisse bibliotheek.jpg": 106,
+	"./vredehofplein bilbliotheek spijkenisse.jpg": 107
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 100;
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/BookMountain2.a5adea00.jpeg";
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/bibliotheek-mvrdv-spijkenisse-5.1b4b8bae.jpeg";
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/boekenberg bibliotheek spijkenisse 2.6054c1d2.jpg";
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/boekenberg bibliotheek spijkenisse.895cf3ee.jpg";
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/boekenberk bookmountain.b5bb1210.jpg";
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/spijkenisse bibliotheek.593f6cce.jpg";
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/vredehofplein bilbliotheek spijkenisse.45c50c70.jpg";
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./clubhuis rijswijkse golfclub 2.jpg": 109,
+	"./clubhuis rijswijkse golfclub.jpg": 110
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 108;
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/clubhuis rijswijkse golfclub 2.84380c02.jpg";
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/clubhuis rijswijkse golfclub.9dc7b473.jpg";
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./mc de grebbe 2.jpg": 112,
+	"./mc de grebbe.jpg": 113
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 111;
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/mc de grebbe 2.0af4ba98.jpg";
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/mc de grebbe.df914489.jpg";
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./merlet.jpg": 115,
+	"./merlet2.png": 116
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 114;
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/merlet.4b915ad3.jpg";
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/merlet2.c083da0f.png";
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./haegeflor.jpg": 118,
+	"./sociale werkplaats haegeflor.jpg": 119
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 117;
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/haegeflor.4160dacf.jpg";
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/sociale werkplaats haegeflor.9217acde.jpg";
+
+/***/ }),
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./villa bergen 1.png": 121,
+	"./villa bergen 2.png": 122,
+	"./villa bergen 3.png": 123,
+	"./villabergen.png": 124
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 120;
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa bergen 1.68e80f00.png";
+
+/***/ }),
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa bergen 2.e6482431.png";
+
+/***/ }),
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villa bergen 3.dbe9685a.png";
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/villabergen.81e23e39.png";
+
+/***/ }),
+/* 125 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./baltic.jpg": 126,
+	"./baltic2.png": 127
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 125;
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/baltic.b028211f.jpg";
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/baltic2.f1910d20.png";
 
 /***/ })
 /******/ ]);

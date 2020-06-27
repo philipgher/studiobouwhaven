@@ -15,6 +15,7 @@
   "silent": false,
   "entry": "index.js",
   "plugins": [
+    "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static-plugin-sass\\node.api.js",
     [
       "C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
       {

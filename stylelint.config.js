@@ -1,5 +1,5 @@
 module.exports = {
-	extends: "stylelint-config-standard",
+	extends: 'stylelint-config-sass-guidelines',
 	rules: {
 		'declaration-block-single-line-max-declarations': 0,
 		indentation: 'tab',
@@ -13,5 +13,6 @@ module.exports = {
 		'comment-no-empty': true,
 		'at-rule-empty-line-before': 'always',
 		'selector-no-qualifying-type': [true, { ignore: ['attribute'] }],
+		'color-named': 'never',
 	}
 };

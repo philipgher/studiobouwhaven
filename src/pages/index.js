@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { heroSlides } from '../content/HomeContent';
 import { USPs } from '../content/HomeContent';
-import { Projects, ProjectCategories } from '../content/Projects';
+import Projects from '../components/Projects/Projects';
 
 const Home = () => {
 	const [currentHeroIndex, setCurrentHero] = useState(0);
@@ -36,23 +36,7 @@ const Home = () => {
 					</div>
 				))}
 			</section>
-			<section className='projects-container'>
-				<h2>{'Onze projecten'}</h2>
-				<div className='project-categories'>
-					{Object.values(ProjectCategories).map(category => (
-						<h3 className='project-category' key={category}>{category}</h3>
-					))}
-				</div>
-				<div className='projects-list'>
-					{Projects.map((project) => (
-						<div key={project.title} className='project'>
-							<h3 className='project-title'>
-								{project.title}
-							</h3>
-						</div>
-					))}
-				</div>
-			</section>
+			<Projects />
 		</>
 	);
 };

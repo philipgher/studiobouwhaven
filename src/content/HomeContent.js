@@ -1,29 +1,28 @@
 import getAltForImage from '../utils/getAltForImage';
+import deBolder from './img/Projects/De Bolder/de bolder.jpg';
+import hotelLEuropeImg from './img/Projects/Hotel LEurope/hotel-de-leurope-amsterdam-by-night1.jpg';
+import villaKogelhof from './img/Projects/Villa Kogelhof/kogelhof.jpg';
 
 export const heroSlides = [
 	{
 		title: 'Studio Bouwhaven',
 		tagline: 'Bouwkundig adviesbureau met total engineering aanpak. Alle adviesdiensten voor het begeleiden van uw bouwproject in één hand.',
-		image: 'source',
-		alignment: 'primary',
+		image: deBolder,
+		alt: 'De Bolder Mammut bouwbegeleiding'
 	},
 	{
 		title: 'Studio Bouwhaven levert het totaalpakket',
 		tagline: '',
-		image: 'source',
-		alignment: 'secondary',
+		image: villaKogelhof,
+		alt: 'Villa Kogelhof consultancy projectmanagement',
 	},
 	{
 		title: 'Zo veel mogelijk waarde toevoegen aan de leefomgeving van de mens is ons doel.',
 		tagline: '',
-		image: 'source',
-		alignment: 'secondary',
+		image: hotelLEuropeImg,
+		alt: 'Spa Hotel de L Europe total engineering',
 	},
 ];
-
-heroSlides.forEach((hero) => {
-	hero.alt = getAltForImage(hero.image);
-});
 
 export const USPs = [
 	{
