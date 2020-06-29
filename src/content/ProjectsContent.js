@@ -10,10 +10,7 @@ export const ProjectCategories = {
 
 const getImagesForProject = importFunc => {
 	if (!importFunc) {
-		return ({
-			src: '',
-			alt: '',
-		});
+		return null;
 	}
 
 	const imageSources = importAll(importFunc);
@@ -29,6 +26,7 @@ export const ProjectsContent = [
 		title: 'Villa Kogelhof',
 		description: '',
 		images: getImagesForProject(typeof document !== 'undefined' ? require.context('./img/Projects/Villa Kogelhof', false, /\.(png|jpe?g|svg)$/) : null),
+		getImages: () => getImagesForProject(typeof document !== 'undefined' ? require.context('./img/Projects/Villa Kogelhof', false, /\.(png|jpe?g|svg)$/) : null),
 		category: [ProjectCategories.woningbouw],
 	},
 	{
