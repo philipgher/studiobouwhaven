@@ -135,10 +135,10 @@ nav a .active::after {
 }
 
 .hero-image {
-	left: 0;
-	object-fit: contain;
+	height: 100vh;
+	min-width: var(--inner-viewport);
+	object-fit: cover;
 	position: absolute;
-	width: var(--inner-viewport);
 }
 
 .usp-container {
@@ -146,13 +146,12 @@ nav a .active::after {
 	@include container;
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin: 100px auto 200px;
 }
 
 .usp {
 	align-items: center;
-	background-color: grey;
 	display: flex;
 	flex-direction: column;
 	height: 200px;
@@ -190,7 +189,42 @@ nav a .active::after {
 	padding-left: 30px;
 }
 
-.projects-list-tile {
-	background: grey;
+.project-list-tile {
 	margin-bottom: 30px;
+	position: relative;
+}
+
+.project-title-container {
+	bottom: 5px;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'OpenSans Light',
+		'HelveticaNeue-Light',
+		'Helvetica Neue Light',
+		'Helvetica Neue',
+		Helvetica,
+		Arial,
+		'Lucida Grande',
+		sans-serif;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.project-title {
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 15px;
+	transform: translateY(100%);
+	transition: all 100ms ease-in-out;
+	width: 100%;
+}
+
+.project-list-tile:hover .project-title {
+	transform: translateY(0);
+}
+
+.project-page-container {
+
+	@include container();
+	margin: 100px auto 200px;
 }

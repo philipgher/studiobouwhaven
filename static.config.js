@@ -1,11 +1,11 @@
 import path from 'path';
 import { ProjectsContent } from './src/content/ProjectsContent';
-import formatProjectName from './src/utils/formatProjectName';
+import getProductNameLink from './src/utils/getProductNameLink';
 
 export default {
 	getRoutes: () => {
 		return ProjectsContent.map(project => ({
-			path: `/project/${formatProjectName(project.title)}`,
+			path: getProductNameLink(project.title),
 			template: 'src/containers/ProjectContainer',
 			getData: () => ({
 				project,
