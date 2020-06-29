@@ -26,7 +26,6 @@ export const ProjectsContent = [
 		title: 'Villa Kogelhof',
 		description: '',
 		images: getImagesForProject(typeof document !== 'undefined' ? require.context('./img/Projects/Villa Kogelhof', false, /\.(png|jpe?g|svg)$/) : null),
-		getImages: () => getImagesForProject(typeof document !== 'undefined' ? require.context('./img/Projects/Villa Kogelhof', false, /\.(png|jpe?g|svg)$/) : null),
 		category: [ProjectCategories.woningbouw],
 	},
 	{

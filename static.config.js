@@ -6,7 +6,7 @@ export default {
 	getRoutes: () => {
 		return ProjectsContent.map(project => ({
 			path: getProductNameLink(project.title),
-			template: 'src/containers/ProjectContainer',
+			template: 'src/components/ProjectContainer',
 			getData: () => ({
 				project,
 			}),

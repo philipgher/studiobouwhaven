@@ -3,6 +3,8 @@ import { Root, Routes } from 'react-static';
 import { Link, Router } from 'components/Router';
 import './app.scss';
 import logo from './content/img/studio bouwhaven.png';
+import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Footer';
 
 const App = () => {
 	if (typeof document !== 'undefined') {
@@ -11,13 +13,13 @@ const App = () => {
 
 	return (
 		<Root>
+			<ScrollToTop />
 			<div className='nav-container'>
 				<nav>
 					<Link className='nav-logo' to='/'>
 						<img src={logo} alt='Studio Bouwhaven total engineering logo' />
 					</Link>
 					<div>
-						<Link to='/work'>{'Work'}</Link>
 						<Link to='/contact'>{'Contact'}</Link>
 					</div>
 				</nav>
@@ -27,6 +29,7 @@ const App = () => {
 					<Routes path='*' />
 				</Router>
 			</React.Suspense>
+			<Footer />
 		</Root>
 	);
 };

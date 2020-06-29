@@ -4,13 +4,13 @@ import Masonry from 'react-masonry-css';
 import getProductNameLink from '../../utils/getProductNameLink';
 
 const ProjectGrid = ({ projects }) => {
-	console.log();
+	const amtColumns = window.screen.width < 670 ? 1 : 3;
 
 	return (
 		<Masonry
 			className='project-list'
 			columnClassName='project-list-column'
-			breakpointCols={3}
+			breakpointCols={amtColumns}
 		>
 			{projects.map((project) => (
 				<Link
@@ -18,7 +18,11 @@ const ProjectGrid = ({ projects }) => {
 					key={project.title}
 				>
 					<div className='project-list-tile'>
-						<img src={project.images[0].src} alt={project.images[0].alt} />
+						<img
+							className='project-list-tile-image'
+							src={project.images[0].src}
+							alt={project.images[0].alt}
+						/>
 						<div className='project-title-container'>
 							<h3 className='project-title'>
 								{project.title}

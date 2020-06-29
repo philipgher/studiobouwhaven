@@ -129,7 +129,10 @@ nav a .active::after {
 }
 
 .hero-text {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
 	height: fit-content;
+	padding: 20px;
 	position: relative;
 	width: 50%;
 }
@@ -194,6 +197,10 @@ nav a .active::after {
 	position: relative;
 }
 
+.project-list-tile-image {
+	width: 100%;
+}
+
 .project-title-container {
 	bottom: 5px;
 	box-sizing: border-box;
@@ -227,4 +234,46 @@ nav a .active::after {
 
 	@include container();
 	margin: 100px auto 200px;
+}
+
+.project-page-image {
+	width: 100%;
+}
+
+.contact-page-container {
+
+	@include container;
+	display: flex;
+	justify-content: space-between;
+	margin: 100px auto 200px;
+
+	p {
+		margin: 5px 0;
+	}
+}
+
+.footer-container {
+
+	@include container;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 670px) {
+	.usp-container {
+		flex-direction: column;
+	}
+
+	.usp {
+		margin: 0 auto;
+		width: 70%;
+	}
+}
+
+@media (hover: none) {
+	.project-title {
+		transform: translateY(0);
+	}
 }
