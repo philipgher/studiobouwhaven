@@ -93,7 +93,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 20px 0;
 
 }
 
@@ -175,6 +175,7 @@ nav a .active::after {
 
 .project-categories {
 	display: flex;
+	margin: 0 0 20px;
 }
 
 .project-category {
@@ -255,7 +256,6 @@ nav a .active::after {
 .footer-container {
 
 	@include container;
-	background-color: rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
 	padding-bottom: 20px;
 	padding-top: 20px;
