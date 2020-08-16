@@ -32,7 +32,12 @@ export const ProjectsContent = [
 	{
 		title: 'OWC Noordwestcluster',
 		description: 'Ector Hoogstad architecten heeft het ontwerp gemaakt voor de nieuwe onderwijscluster voor onderwijs en wetenschappen te Utrecht. Hierbij verzorgd Studio bouwhaven de kostenbegeleiding en technische ondersteuning bij de verschillende hoogwaardige maar tegelijk budget gevoelige onderdelen van het gebouw. Ook het bestaande Minnaert gebouw wordt geheel verbouwd en deels gerenoveerd.',
-		images: '/img/Projects/OWC Noordwestcluster',
+		images: [
+			{
+				src: '/img/Projects/OWC Noordwestcluster',
+				alt: 'OWC Noordwestcluster'
+			},
+		],
 		category: [ProjectCategories.utiliteitbouw],
 	},
 	{
