@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{52:function(e,n,t){"use strict";t.r(n);var a=t(0),c=t.n(a);n.default=function(){return c.a.createElement("div",null,c.a.createElement("p",null,"Contact details here"))}}}]);

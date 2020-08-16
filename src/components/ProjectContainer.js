@@ -4,6 +4,9 @@ import { ProjectsContent } from '../content/ProjectsContent';
 
 const ProjectContainer = () => {
 	const { project } = useRouteData();
+
+	console.log('ProjectsContent', ProjectsContent);
+
 	const thisProject = ProjectsContent.find(projectInAll => project.title === projectInAll.title);
 
 	const createMarkup = () => ({
