@@ -2,8 +2,6 @@ import path from 'path';
 import { ProjectsContent } from './src/content/ProjectsContent';
 import getProductNameLink from './src/utils/getProductNameLink';
 
-console.log('ProjectsContent', ProjectsContent);
-
 export default {
 	getRoutes: () => {
 		return ProjectsContent.map(project => ({

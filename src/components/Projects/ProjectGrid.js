@@ -4,7 +4,7 @@ import Masonry from 'react-masonry-css';
 import getProductNameLink from '../../utils/getProductNameLink';
 
 const ProjectGrid = ({ projects }) => {
-	const amtColumns = window.screen.width < 670 ? 1 : 3;
+	const amtColumns = typeof window !== 'undefined' ? window.screen.width < 670 ? 1 : 3 : 1;
 
 	return (
 		<Masonry

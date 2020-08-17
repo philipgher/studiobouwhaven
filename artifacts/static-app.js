@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 30);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -121,143 +121,301 @@ module.exports = require("react");
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+module.exports = require("path");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports = require("babel-plugin-universal-import/universalImport");
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectCategories; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectCategories; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ProjectsContent; });
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var require_context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(29);
-/* harmony import */ var require_context__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(require_context__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-
 var ProjectCategories = {
   all: 'All',
   hotelsSportEnZorg: 'Hotels sport en zorg',
   utiliteitbouw: 'Utiliteitbouw',
   woningbouw: 'Woningbouw'
 };
-
-var getImagesForProject = function getImagesForProject(importFunc) {
-  var imageSources = importFunc.keys();
-  return imageSources.map(function (imageSource) {
-    return {
-      src: imageSource,
-      alt: imageSource.replace(/\.(png|jpe?g|svg)$/, '')
-    };
-  });
-};
-
-var ProjectsContentList = [{
+var ProjectsContent = [{
   title: 'Villa Kogelhof',
   description: '',
-  imagesFolder: '/img/Projects/Villa Kogelhof',
+  images: [{
+    src: '/img/Projects/Villa Kogelhof/kogelhof.jpg',
+    alt: 'Villa kogelhof'
+  }, {
+    src: '/img/Projects/Villa Kogelhof/villa kogelhof 2.jpg',
+    alt: 'Villa kogelhof'
+  }, {
+    src: '/img/Projects/Villa Kogelhof/villa kogelhof 3.jpg',
+    alt: 'Villa kogelhof'
+  }, {
+    src: '/img/Projects/Villa Kogelhof/villa-kogelhof.jpg',
+    alt: 'Villa kogelhof'
+  }],
   category: [ProjectCategories.woningbouw]
 }, {
   title: 'OWC Noordwestcluster',
   description: 'Ector Hoogstad architecten heeft het ontwerp gemaakt voor de nieuwe onderwijscluster voor onderwijs en wetenschappen te Utrecht. Hierbij verzorgd Studio bouwhaven de kostenbegeleiding en technische ondersteuning bij de verschillende hoogwaardige maar tegelijk budget gevoelige onderdelen van het gebouw. Ook het bestaande Minnaert gebouw wordt geheel verbouwd en deels gerenoveerd.',
-  imagesFolder: '/img/Projects/OWC Noordwestcluster',
+  images: [{
+    src: '/img/Projects/owc noordwestcluster 1.jpg',
+    alt: 'OWC Noordwestcluster'
+  }, {
+    src: '/img/Projects/owc noordwestcluster 2.jpg',
+    alt: 'OWC Noordwestcluster'
+  }, {
+    src: '/img/Projects/owc.jpg',
+    alt: 'OWC Noordwestcluster'
+  }, {
+    src: '/img/Projects/owc2.jpg',
+    alt: 'OWC Noordwestcluster'
+  }, {
+    src: '/img/Projects/owc3.jpg',
+    alt: 'OWC Noordwestcluster'
+  }],
   category: [ProjectCategories.utiliteitbouw]
 }, {
   title: 'Villa Augustus',
   description: '',
-  imagesFolder: '/img/Projects/Villa Augustus',
+  images: [{
+    src: '/img/Projects/Villa-Augustus_in-de-watertoren-is-het-hotel-gerealiseerd.jpg',
+    alt: 'Villa Augustus'
+  }, {
+    src: '/img/Projects/villa augustus 2.jpg',
+    alt: 'Villa Augustus'
+  }, {
+    src: '/img/Projects/villa augustus.jpg',
+    alt: 'Villa Augustus'
+  }],
   category: [ProjectCategories.hotelsSportEnZorg]
 }, {
   title: 'Koningshof Gouda',
   description: 'Voor het plan Koningshof te Gouda zijn 2 appartementenblokken en 6 rijen eengezinswoningen ontwikkeld. Blauwhoed heeft hiervoor een total engineering opdracht verstrekt waarin constructie installatie en geluid en brandadvies is opgenomen. Ook de budgettaire randvoorwaarden waren streng. Een uitgebreide zoektocht heeft uiteindelijk geleid tot een realistisch uitgangspunt voor de haalbaarheid . Momenteel zijn de werktekeningen geproduceerd en is de bouw gestart.',
-  imagesFolder: '/img/Projects/Koningshof Gouda',
+  images: [{
+    src: '/img/Projects/koningshof gouda 2.jpg',
+    alt: 'Koningshof Gouda'
+  }, {
+    src: '/img/Projects/koningshof gouda.jpg',
+    alt: 'Koningshof Gouda'
+  }],
   category: [ProjectCategories.woningbouw]
 }, {
   title: 'Elektrokern Schuurman',
   description: 'Op basis van het schetsontwerp van de architect Bekkering Adams, is een investeringsraming gemaakt en is de exploitatie bekeken. De gewenste architectonische uitwerking is onder druk komen te staan evenals de financiële haalbaarheid. Ook is een ecologische traject met betonkern activering en bodemopslag systeem door Schuurman vastgesteld. Door optimalisatie van het ontwerp en de uitvoering van met name de constructie en de gevel is het project haalbaar gemaakt.<br />Taken: projectmanagement, de ontwerpbegeleiding en directievoering van het plan.',
-  imagesFolder: '/img/Projects/Elektrokern Schuurman',
+  images: [{
+    src: '/img/Projects/elektrokern schuurman 2.jpg',
+    alt: 'Elektrokern Schuurman'
+  }, {
+    src: '/img/Projects/elektrokern schuurman.jpg',
+    alt: 'Elektrokern Schuurman'
+  }],
   category: [ProjectCategories.utiliteitbouw]
 }, {
   title: 'Spa hotel L’Europe',
   description: '',
-  imagesFolder: '/img/Projects/Hotel LEurope',
+  images: [{
+    src: '/img/Projects/hotel l europe amsterdam.jpg',
+    alt: 'Hotel LEurope'
+  }, {
+    src: '/img/Projects/hotel-de-leurope-amsterdam-by-night1.jpg',
+    alt: 'Hotel LEurope'
+  }, {
+    src: '/img/Projects/hotelleurope.jpg',
+    alt: 'Hotel LEurope'
+  }, {
+    src: '/img/Projects/spa hotel l europe.jpg',
+    alt: 'Hotel LEurope'
+  }],
   category: [ProjectCategories.hotelsSportEnZorg]
 }, {
   title: 'Gemengde toren Gouda Oost',
   description: 'Het stedenbouwkundig ontwerp voor het zuidelijk stempel west en het structuurontwerp voor de Springerslocatie vormen samen een stedelijke ruimte met twee torens en ‘actieve’ plinten aan weerszijden van een plein en aan het uiteinde van de groene ruimte van de Oversteek. Dit is het zoekgebied voor een aantal niet-woonprogramma’s, maar ook voor bijzondere woonvormen. Concreet wordt gekeken naar de inpassingsmogelijkheden van begeleid wonen. In de plint komt een medisch centrum en commerciële ruimten.',
-  imagesFolder: '/img/Projects/Gemengde toren Gouda Oost',
+  images: [{
+    src: '/img/Projects/gemende toren gouda oost.png',
+    alt: 'Gemengde toren Gouda Oost'
+  }, {
+    src: '/img/Projects/gouda toren.png',
+    alt: 'Gemengde toren Gouda Oost'
+  }, {
+    src: '/img/Projects/gouda-oost.jpg',
+    alt: 'Gemengde toren Gouda Oost'
+  }, {
+    src: '/img/Projects/toren gouda oost render.jpg',
+    alt: 'Gemengde toren Gouda Oost'
+  }, {
+    src: '/img/Projects/torenGouda.jpg',
+    alt: 'Gemengde toren Gouda Oost'
+  }],
   category: [ProjectCategories.woningbouw]
 }, {
   title: 'De Bolder',
   description: '',
-  imagesFolder: '/img/Projects/De Bolder',
+  images: [{
+    src: '/img/Projects/bolder.jpeg',
+    alt: 'De Bolder'
+  }, {
+    src: '/img/Projects/de bolder 2.jpg',
+    alt: 'De Bolder'
+  }, {
+    src: '/img/Projects/de bolder 3.jpg',
+    alt: 'De Bolder'
+  }, {
+    src: '/img/Projects/de bolder 4.jpg',
+    alt: 'De Bolder'
+  }, {
+    src: '/img/Projects/de bolder.jpg',
+    alt: 'De Bolder'
+  }],
   category: [ProjectCategories.utiliteitbouw]
 }, {
   title: 'Clubhuis tennisvereniging IJburg',
   description: '',
-  imagesFolder: '/img/Projects/Clubhuis tennisvereniging IJburg',
+  images: [{
+    src: '/img/Projects/1280X720img-high13844244835426.jpg',
+    alt: 'Clubhuis tennisvereniging IJburg'
+  }, {
+    src: '/img/Projects/couch-tennisclub-ijburg-m121113-m2.jpg',
+    alt: 'Clubhuis tennisvereniging IJburg'
+  }, {
+    src: '/img/Projects/ijbur.jpg',
+    alt: 'Clubhuis tennisvereniging IJburg'
+  }, {
+    src: '/img/Projects/ijburg-1140x500.jpeg',
+    alt: 'Clubhuis tennisvereniging IJburg'
+  }, {
+    src: '/img/Projects/ijburg.jpeg',
+    alt: 'Clubhuis tennisvereniging IJburg'
+  }, {
+    src: '/img/Projects/ijburg.jpg',
+    alt: 'Clubhuis tennisvereniging IJburg'
+  }, {
+    src: '/img/Projects/mvrdv-pepijn-bakker-couch-5.jpg',
+    alt: 'Clubhuis tennisvereniging IJburg'
+  }],
   category: [ProjectCategories.utiliteitbouw]
 }, {
   title: 'Land van Barendreght',
   description: 'Als ontwikkelend aannemer heeft Gebr. Blokland 221 woningen waarvan 91 appartementen ontwikkeld op de voormalige Haust hooimeier locatie in Barendrecht.<br />Het projectmanagement en sturing op de bouwsystemen en bouwkosten was de opdracht. Uiteindelijk is een zeer intensief overleg met de gemeente noodzakelijk geweest om alle s in goede banen te leiden. Met name faseringen ten gevolge van de crisis en overleg over d e de complete infrastructuur is zeer intensief geweest maar met succes afgerond.',
-  imagesFolder: '/img/Projects/Land van Barendreght',
+  images: [{
+    src: '/img/Projects/land van barendrecht 2.jpg',
+    alt: 'Land van Barendreght'
+  }, {
+    src: '/img/Projects/land van barendreght 2.jpg',
+    alt: 'Land van Barendreght'
+  }, {
+    src: '/img/Projects/land van barendreght 3.jpg',
+    alt: 'Land van Barendreght'
+  }, {
+    src: '/img/Projects/land van barendreght.jpg',
+    alt: 'Land van Barendreght'
+  }],
   category: [ProjectCategories.woningbouw]
 }, {
   title: 'Vredehofplein & bibliotheek Spijkenisse',
   description: 'In 2005 begonnen met de engineering van de bibliotheek te Spijkenisse. Architect is Winny Maas van MVRDV, gevestigd te Rotterdam. Het gebouw kenmerkt zich door de toepassing van een glazen schil op houten spanten. Tussen de houten spanten en de glazen schil zijn tal van voorzieningen opgenomen (zonwering / sprinkler / verwarming). De openbare gebieden van de bibliotheek worden in het geheel uitgevoerd in steenstrips (vloeren / plafonds / wanden / trappen). De boekenkasten worden uitgevoerd in KLP (gerecycled kunststof).<br />Samen met architect MVRDV is het ambitieuze plan voor de boekenberg en 40 appartementen op de parkeergarage in het centrum van Spijkenisse uitgewerkt. De opdracht behelsde de ontwerp en kostenbegeleiding en het maken van de bouwaanvraag, bestek en werktekeningen. Het project is inmiddels opgeleverd.',
-  imagesFolder: '/img/Projects/Vredehofplein en bibliotheek Spijkenisse',
+  images: [{
+    src: '/img/Projects/BookMountain2.jpeg',
+    alt: 'Vredehofplein en bibliotheek Spijkenisse'
+  }, {
+    src: '/img/Projects/bibliotheek-mvrdv-spijkenisse-5.jpeg',
+    alt: 'Vredehofplein en bibliotheek Spijkenisse'
+  }, {
+    src: '/img/Projects/boekenberg bibliotheek spijkenisse 2.jpg',
+    alt: 'Vredehofplein en bibliotheek Spijkenisse'
+  }, {
+    src: '/img/Projects/boekenberg bibliotheek spijkenisse.jpg',
+    alt: 'Vredehofplein en bibliotheek Spijkenisse'
+  }, {
+    src: '/img/Projects/boekenberk bookmountain.jpg',
+    alt: 'Vredehofplein en bibliotheek Spijkenisse'
+  }, {
+    src: '/img/Projects/spijkenisse bibliotheek.jpg',
+    alt: 'Vredehofplein en bibliotheek Spijkenisse'
+  }, {
+    src: '/img/Projects/vredehofplein bilbliotheek spijkenisse.jpg',
+    alt: 'Vredehofplein en bibliotheek Spijkenisse'
+  }],
   category: [ProjectCategories.woningbouw, ProjectCategories.utiliteitbouw]
 }, {
   title: 'Clubhuis Rijswijkse Golfclub',
   description: 'Het nieuwe clubhuis van de Rijswijkse Golfclub is samen met architect Wolbrant van der Vlis ontworpen en in een total engineering constructie compleet uitgewerkt, aanbesteed en begeleid. De ambities van de golfclub stonden in grote spanning met de stedenbouwkundige randvoorwaarden. Toch is er een efficiënt, fraai en bijzonder clubhuis van gemaakt.',
-  imagesFolder: '/img/Projects/Clubhuis Rijswijkse Golfclub',
+  images: [{
+    src: '/img/Projects/clubhuis rijswijkse golfclub 2.jpg',
+    alt: 'Clubhuis Rijswijkse Golfclub'
+  }, {
+    src: '/img/Projects/clubhuis rijswijkse golfclub.jpg',
+    alt: 'Clubhuis Rijswijkse Golfclub'
+  }],
   category: [ProjectCategories.utiliteitbouw]
 }, {
   title: 'MC de Grebbe',
   description: 'Samen met Grassodenridder architecten werkt Studio Bouwhaven aan het ontwerp en realisatie van het medisch centrum De Grebbe te Bergen op Zoom. Door Studiobouwhaven worden de volgende werkzaamheden verricht:<br />Bouwkundige , constructieve en installatietechnische engineering in alle fasen van het bouwproces, bouwkosten begeleiding en aanbesteding, alsmede de directievoering tijdens de uitvoering. Het gebouw is inmiddels naar tevredenheid van de opdrachtgevers opgeleverd.',
-  imagesFolder: '/img/Projects/MC de Grebbe',
+  images: [{
+    src: '/img/Projects/mc de grebbe 2.jpg',
+    alt: 'MC de Grebbe'
+  }, {
+    src: '/img/Projects/mc de grebbe.jpg',
+    alt: 'MC de Grebbe'
+  }],
   category: [ProjectCategories.hotelsSportEnZorg]
 }, {
   title: 'Merlet college Cuijck',
   description: '',
-  imagesFolder: '/img/Projects/Merlet college Cuijck',
+  images: [{
+    src: '/img/Projects/merlet.jpg',
+    alt: 'Merlet college Cuijck'
+  }, {
+    src: '/img/Projects/merlet2.png',
+    alt: 'Merlet college Cuijck'
+  }],
   category: [ProjectCategories.utiliteitbouw]
 }, {
   title: 'Sociale werkplaats Haegheflor',
   description: 'De Haeghe groep heeft het voormalig kassencomplex van Valstar aan de Orberlaan in monster aangekocht om daar de nieuwe sociale werkplaats in te richten. Naast de verbouw en aanpassing van de kassen en de pootlijn moeten ook werkplaatsen, verwerkingsruimten en faciliteiten voor de medewerkers van Haeghe flor worden gemaakt. De bouw moet openbaar worden aanbesteed om te komen tot een design en build realisatie door een aannemer. Tevens is de planning bijzonder strak in verband met de oplevering van de oude locatie.<br />Taken: Ontwerp, TOTAL ENGINEERING met projectmanagement, kostenbegeleiding, ontwerp en bouwbegeleiding.',
-  imagesFolder: '/img/Projects/Sociale werkplaats Haegheflor',
+  images: [{
+    src: '/img/Projects/haegeflor.jpg',
+    alt: 'Sociale werkplaats Haegheflor'
+  }, {
+    src: '/img/Projects/sociale werkplaats haegeflor.jpg',
+    alt: 'Sociale werkplaats Haegheflor'
+  }],
   category: [ProjectCategories.hotelsSportEnZorg]
 }, {
   title: 'Villa Bergen',
   description: '',
-  imagesFolder: '/img/Projects/Villa Bergen',
+  images: [{
+    src: '/img/Projects/villa bergen 1.png',
+    alt: 'Villa Bergen'
+  }, {
+    src: '/img/Projects/villa bergen 2.png',
+    alt: 'Villa Bergen'
+  }, {
+    src: '/img/Projects/villa bergen 3.png',
+    alt: 'Villa Bergen'
+  }, {
+    src: '/img/Projects/villabergen.png',
+    alt: 'Villa Bergen'
+  }],
   category: [ProjectCategories.woningbouw]
 }, {
   title: 'Baltic Tower - Poznan, Poland',
   description: '',
-  imagesFolder: '/img/Projects/Baltic Tower - Poznan Poland',
+  images: [{
+    src: '/img/Projects/baltic.jpg',
+    alt: 'Baltic Tower - Poznan Poland'
+  }, {
+    src: '/img/Projects/baltic2.png',
+    alt: 'Baltic Tower - Poznan Poland'
+  }],
   category: [ProjectCategories.utiliteitbouw]
 }];
-var ProjectsContent = ProjectsContentList.map(function (project) {
-  return _objectSpread(_objectSpread({}, project), {}, {
-    images: getImagesForProject(require_context__WEBPACK_IMPORTED_MODULE_1___default()(__dirname + project.imagesFolder), false, /\.(png|jpe?g|svg)$/)
-  });
-});
-/* WEBPACK VAR INJECTION */}.call(this, "/"))
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = require("path");
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
 /* 4 */
@@ -305,7 +463,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(36);
+var _requireUniversalModule = __webpack_require__(34);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -320,7 +478,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(38);
+var _reportChunks = __webpack_require__(36);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -342,13 +500,13 @@ var _hoistNonReactStatics = __webpack_require__(16);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(39);
+var _vm = __webpack_require__(37);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
 var _utils = __webpack_require__(12);
 
-var _helpers = __webpack_require__(40);
+var _helpers = __webpack_require__(38);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -743,7 +901,7 @@ function universal(asyncModule) {
     report: _propTypes2["default"].func
   }, _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(35)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(33)(module)))
 
 /***/ }),
 /* 5 */
@@ -785,7 +943,7 @@ var _utils = __webpack_require__(12);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(37)("" + id);
+    return __webpack_require__(35)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -812,20 +970,20 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 // EXTERNAL MODULE: external "react-static"
 var external_react_static_ = __webpack_require__(6);
 
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/Router.js
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/components/Router.js
 var Router = __webpack_require__(7);
 
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/app.scss
-var app = __webpack_require__(49);
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/app.scss
+var app = __webpack_require__(47);
 
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/img/studio bouwhaven.png
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/content/img/studio bouwhaven.png
 var studio_bouwhaven = __webpack_require__(23);
 var studio_bouwhaven_default = /*#__PURE__*/__webpack_require__.n(studio_bouwhaven);
 
 // EXTERNAL MODULE: external "@reach/router"
 var router_ = __webpack_require__(5);
 
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/ScrollToTop.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/components/ScrollToTop.js
 
 
 
@@ -834,13 +992,15 @@ var ScrollToTop_ScrollToTop = function ScrollToTop() {
       pathname = _useLocation.pathname;
 
   Object(external_react_["useEffect"])(function () {
-    window.scrollTo(0, 0);
+    if (window) {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
   return null;
 };
 
 /* harmony default export */ var components_ScrollToTop = (ScrollToTop_ScrollToTop);
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/Footer.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/components/Footer.js
 
 
 var Footer_Footer = function Footer() {
@@ -850,7 +1010,7 @@ var Footer_Footer = function Footer() {
 };
 
 /* harmony default export */ var components_Footer = (Footer_Footer);
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/App.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/App.js
 
 
 
@@ -1065,7 +1225,7 @@ module.exports = require("react-dom");
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = require("C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static\\lib\\browser");
+module.exports = require("/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/node_modules/react-static/lib/browser");
 
 /***/ }),
 /* 15 */
@@ -1129,7 +1289,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _content_ProjectsContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _content_ProjectsContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 
 
 
@@ -1138,7 +1298,6 @@ var ProjectContainer = function ProjectContainer() {
   var _useRouteData = Object(react_static__WEBPACK_IMPORTED_MODULE_1__["useRouteData"])(),
       project = _useRouteData.project;
 
-  console.log('ProjectsContent', _content_ProjectsContent__WEBPACK_IMPORTED_MODULE_2__[/* ProjectsContent */ "b"]);
   var thisProject = _content_ProjectsContent__WEBPACK_IMPORTED_MODULE_2__[/* ProjectsContent */ "b"].find(function (projectInAll) {
     return project.title === projectInAll.title;
   });
@@ -1181,19 +1340,19 @@ var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/img/Projects/De Bolder/de bolder.jpg
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/content/img/Projects/De Bolder/de bolder.jpg
 var de_bolder = __webpack_require__(24);
 var de_bolder_default = /*#__PURE__*/__webpack_require__.n(de_bolder);
 
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/img/Projects/Hotel LEurope/hotel-de-leurope-amsterdam-by-night1.jpg
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/content/img/Projects/Hotel LEurope/hotel-de-leurope-amsterdam-by-night1.jpg
 var hotel_de_leurope_amsterdam_by_night1 = __webpack_require__(25);
 var hotel_de_leurope_amsterdam_by_night1_default = /*#__PURE__*/__webpack_require__.n(hotel_de_leurope_amsterdam_by_night1);
 
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/img/Projects/Villa Kogelhof/kogelhof.jpg
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/content/img/Projects/Villa Kogelhof/kogelhof.jpg
 var kogelhof = __webpack_require__(26);
 var kogelhof_default = /*#__PURE__*/__webpack_require__.n(kogelhof);
 
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/HomeContent.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/content/HomeContent.js
 
 
 
@@ -1229,20 +1388,20 @@ var USPs = [{
   image: 'source',
   alt: ''
 }];
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/Router.js
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/components/Router.js
 var Router = __webpack_require__(7);
 
 // EXTERNAL MODULE: external "react-masonry-css"
 var external_react_masonry_css_ = __webpack_require__(27);
 var external_react_masonry_css_default = /*#__PURE__*/__webpack_require__.n(external_react_masonry_css_);
 
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/utils/getProductNameLink.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/utils/getProductNameLink.js
 var getProductNameLink = function getProductNameLink(projetTitle) {
   return "project/".concat(projetTitle.replace(/ /g, '-').replace(/--/g, '-').replace(/,|&|(|)|!|'|"|`|’|‘|“|”|„|_/g, '').toLowerCase());
 };
 
 /* harmony default export */ var utils_getProductNameLink = (getProductNameLink);
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/Projects/ProjectGrid.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/components/Projects/ProjectGrid.js
 
 
 
@@ -1250,7 +1409,7 @@ var getProductNameLink = function getProductNameLink(projetTitle) {
 
 var ProjectGrid_ProjectGrid = function ProjectGrid(_ref) {
   var projects = _ref.projects;
-  var amtColumns = window.screen.width < 670 ? 1 : 3;
+  var amtColumns = typeof window !== 'undefined' ? window.screen.width < 670 ? 1 : 3 : 1;
   return /*#__PURE__*/external_react_default.a.createElement(external_react_masonry_css_default.a, {
     className: "project-list",
     columnClassName: "project-list-column",
@@ -1274,10 +1433,10 @@ var ProjectGrid_ProjectGrid = function ProjectGrid(_ref) {
 };
 
 /* harmony default export */ var Projects_ProjectGrid = (ProjectGrid_ProjectGrid);
-// EXTERNAL MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/content/ProjectsContent.js
-var ProjectsContent = __webpack_require__(1);
+// EXTERNAL MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/content/ProjectsContent.js
+var ProjectsContent = __webpack_require__(3);
 
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/components/Projects/Projects.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/components/Projects/Projects.js
 
 
 
@@ -1319,7 +1478,7 @@ var Projects_Projects = function Projects() {
 };
 
 /* harmony default export */ var components_Projects_Projects = (Projects_Projects);
-// CONCATENATED MODULE: C:/Users/Philip/Documents/GitHub/studiobouwhaven/src/pages/index.js
+// CONCATENATED MODULE: /Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/src/pages/index.js
 
 
 
@@ -1529,34 +1688,22 @@ module.exports = require("react-masonry-css");
 
 /***/ }),
 /* 28 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("@babel/runtime/helpers/defineProperty");
+__webpack_require__(29);
+__webpack_require__(31);
+module.exports = __webpack_require__(39);
+
 
 /***/ }),
 /* 29 */
-/***/ (function(module, exports) {
-
-module.exports = require("require-context");
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(31);
-__webpack_require__(33);
-module.exports = __webpack_require__(41);
-
-
-/***/ }),
-/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(32)["default"];
+var plugins = __webpack_require__(30)["default"];
 
 var _require = __webpack_require__(14),
     registerPlugins = _require.registerPlugins;
@@ -1566,7 +1713,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 32 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1601,7 +1748,7 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 33 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1611,7 +1758,7 @@ var plugins = [{
 var _require = __webpack_require__(14),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(34),
+var _require2 = __webpack_require__(32),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1620,15 +1767,15 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 34 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notFoundTemplate", function() { return notFoundTemplate; });
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
@@ -1739,7 +1886,7 @@ var notFoundTemplate = "__react_static_root__/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 35 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1768,7 +1915,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 36 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1979,7 +2126,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 37 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -2007,10 +2154,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 37;
+webpackContext.id = 35;
 
 /***/ }),
-/* 38 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2119,13 +2266,13 @@ ReportChunks.childContextTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 39 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("vm");
 
 /***/ }),
-/* 40 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2192,28 +2339,28 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 41 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(42);
+var _interopRequireWildcard = __webpack_require__(40);
 
-var _interopRequireDefault = __webpack_require__(43);
+var _interopRequireDefault = __webpack_require__(41);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(44));
+var _extends2 = _interopRequireDefault(__webpack_require__(42));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(45));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(43));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(46);
+var _useStaticInfo = __webpack_require__(44);
 /* eslint-disable import/no-dynamic-require */
 
 
@@ -2234,7 +2381,7 @@ function Suspense(_ref) {
 React.Suspense = Suspense;
 React["default"].Suspense = Suspense;
 
-var App = __webpack_require__(47)["default"];
+var App = __webpack_require__(45)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2247,37 +2394,37 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 42 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 43 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 44 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 45 */
+/* 43 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 46 */
+/* 44 */
 /***/ (function(module, exports) {
 
-module.exports = require("C:\\Users\\Philip\\Documents\\GitHub\\studiobouwhaven\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
+module.exports = require("/Users/philipghering/Documents/StudioBouwhaven/studiobouwhaven-react/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
-/* 47 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2314,10 +2461,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(46)(module)))
 
 /***/ }),
-/* 48 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2347,23 +2494,23 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 49 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(50)(false);
+exports = module.exports = __webpack_require__(48)(false);
 // Imports
-var urlEscape = __webpack_require__(51);
-var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(52));
-var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(53));
-var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(54));
+var urlEscape = __webpack_require__(49);
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(50));
+var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(51));
+var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(52));
 
 // Module
-exports.push([module.i, "*{scroll-behavior:smooth}@font-face{font-family:'OpenSans Light';src:url(" + ___CSS_LOADER_URL___0___ + ") format(\"woff\")}@font-face{font-family:'OpenSans Regular';src:url(" + ___CSS_LOADER_URL___1___ + ") format(\"woff\")}@font-face{font-family:'OpenSans Extra Bold';src:url(" + ___CSS_LOADER_URL___2___ + ") format(\"woff\")}body{--inner-viewport: 100%;font-family:'OpenSans Regular',\r 'HelveticaNeue-Light',\r 'Helvetica Neue Light',\r 'Helvetica Neue',\r Helvetica,\r Arial,\r 'Lucida Grande',\r sans-serif;font-size:16px;margin:0;overflow-x:hidden;padding:0}a{color:inherit;text-decoration:none}img{max-width:100%;-o-object-fit:contain;object-fit:contain}button{background-color:unset;border:0;font:unset;padding:0;text-align:unset}button:hover{cursor:pointer}button:active,button:focus{border:0;outline:none}h1,h2,h3,h4,h5,h6{margin:0}.nav-container{left:0;position:absolute;top:0;width:100vw;z-index:100}nav{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-between;margin:0 auto;padding:20px}nav a{display:inline-block;padding:1rem}nav a .active::after{background-color:black;content:'';display:block;height:1px;position:relative;width:100%}.nav-logo{align-content:center;display:flex;padding:0;width:150px}.hero{align-items:center;display:flex;height:100vh;justify-content:center;overflow:hidden;text-align:center;width:var(--inner-viewport)}.hero-text{background-color:rgba(0,0,0,0.3);color:white;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;padding:20px;position:relative;width:50%}.hero-image{height:100vh;min-width:var(--inner-viewport);-o-object-fit:cover;object-fit:cover;position:absolute}.usp-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-around;margin:100px auto 200px}.usp{align-items:center;display:flex;flex-direction:column;height:200px;text-align:center;width:20%}.usp-icon{-o-object-fit:contain;object-fit:contain;width:70%}.projects-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);margin:100px auto 200px}.project-categories{display:flex}.project-category{padding:10px 20px 10px 0}.project-list{display:flex;margin-left:-30px;width:auto}.project-list-column{background-clip:padding-box;padding-left:30px}.project-list-tile{margin-bottom:30px;position:relative}.project-list-tile-image{width:100%}.project-title-container{bottom:5px;box-sizing:border-box;color:white;font-family:'OpenSans Light',\r 'HelveticaNeue-Light',\r 'Helvetica Neue Light',\r 'Helvetica Neue',\r Helvetica,\r Arial,\r 'Lucida Grande',\r sans-serif;overflow:hidden;position:absolute;width:100%}.project-title{background-color:rgba(0,0,0,0.3);padding:15px;transform:translateY(100%);transition:all 100ms ease-in-out;width:100%}.project-list-tile:hover .project-title{transform:translateY(0)}.project-page-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);margin:100px auto 200px}.project-page-image{width:100%}.contact-page-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-between;margin:100px auto 200px}.contact-page-container p{margin:5px 0}.footer-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);background-color:rgba(0,0,0,0.1);margin:0 auto;padding-bottom:20px;padding-top:20px}@media screen and (max-width: 670px){.usp-container{flex-direction:column}.usp{margin:0 auto;width:70%}}@media (hover: none){.project-title{transform:translateY(0)}}\n", ""]);
+exports.push([module.i, "*{scroll-behavior:smooth}@font-face{font-family:'OpenSans Light';src:url(" + ___CSS_LOADER_URL___0___ + ") format(\"woff\")}@font-face{font-family:'OpenSans Regular';src:url(" + ___CSS_LOADER_URL___1___ + ") format(\"woff\")}@font-face{font-family:'OpenSans Extra Bold';src:url(" + ___CSS_LOADER_URL___2___ + ") format(\"woff\")}body{--inner-viewport: 100%;font-family:'OpenSans Regular', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;font-size:16px;margin:0;overflow-x:hidden;padding:0}a{color:inherit;text-decoration:none}img{max-width:100%;-o-object-fit:contain;object-fit:contain}button{background-color:unset;border:0;font:unset;padding:0;text-align:unset}button:hover{cursor:pointer}button:active,button:focus{border:0;outline:none}h1,h2,h3,h4,h5,h6{margin:0}.nav-container{left:0;position:absolute;top:0;width:100vw;z-index:100}nav{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-between;margin:0 auto;padding:20px 0}nav a{display:inline-block;padding:1rem}nav a .active::after{background-color:black;content:'';display:block;height:1px;position:relative;width:100%}.nav-logo{align-content:center;display:flex;padding:0;width:150px}.hero{align-items:center;display:flex;height:100vh;justify-content:center;overflow:hidden;text-align:center;width:var(--inner-viewport)}.hero-text{background-color:rgba(0,0,0,0.3);color:white;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;padding:20px;position:relative;width:50%}.hero-image{height:100vh;min-width:var(--inner-viewport);-o-object-fit:cover;object-fit:cover;position:absolute}.usp-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-around;margin:100px auto 200px}.usp{align-items:center;display:flex;flex-direction:column;height:200px;text-align:center;width:20%}.usp-icon{-o-object-fit:contain;object-fit:contain;width:70%}.projects-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);margin:100px auto 200px}.project-categories{display:flex;margin:0 0 20px}.project-category{padding:10px 20px 10px 0}.project-list{display:flex;margin-left:-30px;width:auto}.project-list-column{background-clip:padding-box;padding-left:30px}.project-list-tile{margin-bottom:30px;position:relative}.project-list-tile-image{width:100%}.project-title-container{bottom:5px;box-sizing:border-box;color:white;font-family:'OpenSans Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;overflow:hidden;position:absolute;width:100%}.project-title{background-color:rgba(0,0,0,0.3);padding:15px;transform:translateY(100%);transition:all 100ms ease-in-out;width:100%}.project-list-tile:hover .project-title{transform:translateY(0)}.project-page-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);margin:100px auto 200px}.project-page-image{width:100%}.contact-page-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);display:flex;justify-content:space-between;margin:100px auto 200px}.contact-page-container p{margin:5px 0}.footer-container{box-sizing:border-box;max-width:1200px;padding:0 10px;width:var(--inner-viewport);margin:0 auto;padding-bottom:20px;padding-top:20px}@media screen and (max-width: 670px){.usp-container{flex-direction:column}.usp{margin:0 auto;width:70%}}@media (hover: none){.project-title{transform:translateY(0)}}\n", ""]);
 
 
 
 /***/ }),
-/* 50 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2454,7 +2601,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 51 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2480,19 +2627,19 @@ module.exports = function escape(url, needQuotes) {
 };
 
 /***/ }),
-/* 52 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/OpenSans-Light.05c88e41.woff";
 
 /***/ }),
-/* 53 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/OpenSans-Regular.c8ffdeb3.woff";
 
 /***/ }),
-/* 54 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/OpenSans-ExtraBold.177b9a28.woff";
