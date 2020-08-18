@@ -124,7 +124,7 @@ nav a .active::after {
 	justify-content: center;
 	overflow: hidden;
 	text-align: center;
-	width: var(--inner-viewport);
+	width: 100%;
 }
 
 .hero-text {
@@ -138,7 +138,7 @@ nav a .active::after {
 
 .hero-image {
 	height: 100vh;
-	min-width: var(--inner-viewport);
+	min-width: 100%;
 	object-fit: cover;
 	position: absolute;
 }
@@ -282,6 +282,17 @@ nav a .active::after {
 	margin: 0 auto;
 	padding-bottom: 50px;
 	padding-top: 20px;
+}
+
+.not-found {
+	display: flex;
+	flex-direction: column;
+
+	a {
+		border: 2px solid rgb(195, 189, 154);
+		margin-top: 20px;
+		padding: 12px 32px;
+	}
 }
 
 @media screen and (max-width: 670px) {

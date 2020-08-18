@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'components/Router';
 
 export default () => (
-	<div>
-		<h1>{"404 - Oh no's! We couldn't find that page :("}</h1>
+	<div className='hero not-found'>
+		<h3>{'Deze pagina is niet gevonden, wellicht is de pagina die u zocht verplaatst'}</h3>
+		<Link to='/'>{'Ga naar de homepagina'}</Link>
 	</div>
 );
