@@ -21,12 +21,10 @@
 	box-sizing: border-box;
 	max-width: 1200px;
 	padding: 0 10px;
-	width: var(--inner-viewport);
+	width: 100%;
 }
 
 body {
-	--inner-viewport: 100%;
-
 	font-family:
 		'OpenSans Regular',
 		'HelveticaNeue-Light',
@@ -81,9 +79,10 @@ h6 {
 
 .nav-container {
 	left: 0;
+	margin: 0 auto;
 	position: absolute;
 	top: 0;
-	width: 100vw;
+	width: 100%;
 	z-index: 100;
 }
 
@@ -93,13 +92,13 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 20px 10px;
 
 }
 
 nav a {
 	display: inline-block;
-	padding: 1rem;
+	padding: 1rem 0 1rem 1rem;
 }
 
 nav a .active::after {
@@ -175,11 +174,24 @@ nav a .active::after {
 
 .project-categories {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 0 20px;
 }
 
 .project-category {
-	padding: 10px 20px 10px 0;
+	margin: 10px 20px 10px 0;
+	position: relative;
+
+	&.disabled {
+		&::after {
+			background-color: rgb(0, 0, 0);
+			content: '';
+			display: block;
+			height: 1px;
+			position: absolute;
+			width: 100%;
+		}
+	}
 }
 
 .project-list {
@@ -234,11 +246,22 @@ nav a .active::after {
 .project-page-container {
 
 	@include container();
-	margin: 100px auto 200px;
+	margin: 100px auto;
 }
 
 .project-page-image {
 	width: 100%;
+}
+
+.other-projects-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	width: 100%;
+
+	a:last-child {
+		text-align: right;
+	}
 }
 
 .contact-page-container {
@@ -257,19 +280,24 @@ nav a .active::after {
 
 	@include container;
 	margin: 0 auto;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	padding-top: 20px;
 }
 
 @media screen and (max-width: 670px) {
+	.hero-text {
+		width: 90%;
+	}
+
 	.usp-container {
 		flex-direction: column;
 	}
 
 	.usp {
-		margin: 0 auto;
+		margin: 0 auto 50px;
 		width: 70%;
 	}
+
 }
 
 @media (hover: none) {

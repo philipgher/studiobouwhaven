@@ -3,9 +3,12 @@ import ProjectGrid from './ProjectGrid';
 import { ProjectsContent, ProjectCategories } from '../../content/ProjectsContent';
 
 const Projects = () => {
+	const [activeCategory, setActiveCategory] = useState(ProjectCategories.all);
 	const [activeProjects, setActiveProjects] = useState(ProjectsContent);
 
 	const handleClickCategory = category => {
+		setActiveCategory(category);
+
 		if (category === ProjectCategories.all) {
 			setActiveProjects(ProjectsContent);
 
@@ -18,7 +21,7 @@ const Projects = () => {
 	};
 
 	return (
-		<section className='projects-container'>
+		<section className='projects-container' id='projects'>
 			<h2>{'Onze projecten'}</h2>
 			<div className='project-categories'>
 				{Object.values(ProjectCategories).map(category => (
@@ -26,7 +29,7 @@ const Projects = () => {
 						key={category}
 						onClick={() => handleClickCategory(category)}
 					>
-						<h4 className='project-category'>
+						<h4 className={`project-category ${category === activeCategory ? 'disabled' : ''}`}>
 							{category}
 						</h4>
 					</button>

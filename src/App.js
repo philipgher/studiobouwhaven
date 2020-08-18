@@ -7,10 +7,6 @@ import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 
 const App = () => {
-	if (typeof document !== 'undefined') {
-		document.body.style.setProperty('--inner-viewport', `${document.body.scrollWidth}px`);
-	}
-
 	return (
 		<Root>
 			<ScrollToTop />
