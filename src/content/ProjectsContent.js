@@ -1,3 +1,6 @@
+import afc_amsterdamsche_football_club from './img/Projects/Amsterdamsche Football Club Clubhuis/afc_amsterdamsche_football_club.jpg';
+import afc_footballclub from './img/Projects/Amsterdamsche Football Club Clubhuis/afc_football-club.jpg';
+import afc_paul_de_ruiter from './img/Projects/Amsterdamsche Football Club Clubhuis/afc_paul_de_ruiter.jpg';
 import baltic from './img/Projects/Baltic Tower - Poznan Poland/baltic.jpg';
 import baltic2 from './img/Projects/Baltic Tower - Poznan Poland/baltic2.png';
 import clubhuisrijswijksegolfclub2 from './img/Projects/Clubhuis Rijswijkse Golfclub/clubhuis rijswijkse golfclub 2.jpg';
@@ -31,6 +34,8 @@ import landvanbarendrecht2 from './img/Projects/Land van Barendreght/land van ba
 import landvanbarendreght2 from './img/Projects/Land van Barendreght/land van barendreght 2.jpg';
 import landvanbarendreght3 from './img/Projects/Land van Barendreght/land van barendreght 3.jpg';
 import landvanbarendreght from './img/Projects/Land van Barendreght/land van barendreght.jpg';
+import LouisArmstrongAlmere1 from './img/Projects/Louis Armstrongweg Almere/LouisArmstrong-Almere1.jpg';
+import LouisArmstrongAlmere2 from './img/Projects/Louis Armstrongweg Almere/LouisArmstrong-Almere2.jpg';
 import mcdegrebbe2 from './img/Projects/MC de Grebbe/mc de grebbe 2.jpg';
 import mcdegrebbe from './img/Projects/MC de Grebbe/mc de grebbe.jpg';
 import merlet from './img/Projects/Merlet college Cuijck/merlet.jpg';
@@ -60,6 +65,12 @@ import boekenbergbibliotheekspijkenisse from './img/Projects/Vredehofplein en bi
 import boekenberkbookmountain from './img/Projects/Vredehofplein en bibliotheek Spijkenisse/boekenberk bookmountain.jpg';
 import spijkenissebibliotheek from './img/Projects/Vredehofplein en bibliotheek Spijkenisse/spijkenisse bibliotheek.jpg';
 import vredehofpleinbilbliotheekspijkenisse from './img/Projects/Vredehofplein en bibliotheek Spijkenisse/vredehofplein bilbliotheek spijkenisse.jpg';
+import waldorp0001 from './img/Projects/Waldorp/waldorp0001.jpg';
+import waldorp0002 from './img/Projects/Waldorp/waldorp0002.jpg';
+import waldorp0003 from './img/Projects/Waldorp/waldorp0003.jpg';
+import waldorp0004 from './img/Projects/Waldorp/waldorp0004.jpg';
+import waldorp0005 from './img/Projects/Waldorp/waldorp0005.jpg';
+import waldorp0006 from './img/Projects/Waldorp/waldorp0006.jpg';
 
 export const ProjectCategories = {
 	all: 'All',
@@ -69,6 +80,71 @@ export const ProjectCategories = {
 };
 
 export const ProjectsContent = [
+	{
+		title: 'Woningen Louis Armstrongweg Almere',
+		description: 'Studiobouwhaven verzorgd het projectmanagement en de kostenbegeleiding voor de transformatie van het kantoorgebouw naar woningen, aan de Louis Armstrongweg 2-16 in Almere. Start bouw is gepland oktober 2020.',
+		images: [
+			{
+				src: LouisArmstrongAlmere1,
+				alt: 'Louis Armstrongweg Almere',
+			},
+			{
+				src: LouisArmstrongAlmere2,
+				alt: 'Louis Armstrongweg Almere',
+			},
+		],
+		category: [ProjectCategories.woningbouw],
+	},
+	{
+		title: 'Clubhuis Amsterdamsche Football Club',
+		description: '',
+		images: [
+			{
+				src: afc_amsterdamsche_football_club,
+				alt: 'Amsterdamsche Football Club Clubhuis',
+			},
+			{
+				src: afc_footballclub,
+				alt: 'Amsterdamsche Football Club Clubhuis',
+			},
+			{
+				src: afc_paul_de_ruiter,
+				alt: 'Amsterdamsche Football Club Clubhuis',
+			},
+		],
+		category: [ProjectCategories.utiliteitbouw],
+	},
+	{
+		title: 'Waldorp',
+		description: 'Voor het project de Waldorp heeft Studiobouwhaven de Total Engineering verzorgd van haalbaarheidsstudie t/m omgevingsvergunning en werktekeningen.<br />Het project omvat 780 woningen en commerciële ruimten in de plint. Ook een het verzorgen van de bestemmingsplanwijziging en een spoorwegwetvergunning was onderdeel van de werkzaamheden.',
+		images: [
+			{
+				src: waldorp0001,
+				alt: 'Waldorp',
+			},
+			{
+				src: waldorp0002,
+				alt: 'Waldorp',
+			},
+			{
+				src: waldorp0003,
+				alt: 'Waldorp',
+			},
+			{
+				src: waldorp0004,
+				alt: 'Waldorp',
+			},
+			{
+				src: waldorp0005,
+				alt: 'Waldorp',
+			},
+			{
+				src: waldorp0006,
+				alt: 'Waldorp',
+			},
+		],
+		category: [ProjectCategories.woningbouw],
+	},
 	{
 		title: 'Villa Kogelhof',
 		description: '',

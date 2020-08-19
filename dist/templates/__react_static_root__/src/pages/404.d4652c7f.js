@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{51:function(e,a,n){"use strict";n.r(a);var t=n(0),i=n.n(t),o=n(18);a.default=function(){return i.a.createElement("div",{className:"hero not-found"},i.a.createElement("h3",null,"Deze pagina is niet gevonden, wellicht is de pagina die u zocht verplaatst"),i.a.createElement(o.a,{to:"/"},"Ga naar de homepagina"))}}}]);
