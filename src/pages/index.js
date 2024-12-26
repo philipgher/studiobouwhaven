@@ -31,7 +31,6 @@ const Home = () => {
 				{USPs.map(usp => (
 					<div key={usp.title} className='usp'>
 						<h3>{usp.title}</h3>
-						<img className='usp-icon' src={usp.image} alt={usp.alt} />
 						<p>{usp.body}</p>
 					</div>
 				))}

@@ -71,6 +71,11 @@ import waldorp0003 from './img/Projects/Waldorp/waldorp0003.jpg';
 import waldorp0004 from './img/Projects/Waldorp/waldorp0004.jpg';
 import waldorp0005 from './img/Projects/Waldorp/waldorp0005.jpg';
 import waldorp0006 from './img/Projects/Waldorp/waldorp0006.jpg';
+import celest1 from './img/Projects/Celest/Celest1.jpg';
+import celest2 from './img/Projects/Celest/Celest2.jpg';
+import hiphub from './img/Projects/Hiphub/hiphub.png';
+import greenharbour1 from './img/Projects/Green Harbour/Green Harbour 1.jpg';
+import greenharbour2 from './img/Projects/Green Harbour/Green Harbour 2.jpg';
 
 export const ProjectCategories = {
 	all: 'All',
@@ -80,6 +85,47 @@ export const ProjectCategories = {
 };
 
 export const ProjectsContent = [
+	{
+		title: 'Celest',
+		description: 'Projectmanagement Restaurant Celest Zalmhaventoren Rotterdam',
+		images: [
+			{
+				src: celest1,
+				alt: 'Celest moon',
+			},
+			{
+				src: celest2,
+				alt: 'Celest restaurant',
+			},
+		],
+		category: [ProjectCategories.hotelsSportEnZorg],
+	},
+	{
+		title: 'Hiphub',
+		description: 'Projectbegeleiding 6000m2 Kantoor Sluisbuurt Amsterdam',
+		images: [
+			{
+				src: hiphub,
+				alt: 'Hiphub',
+			},
+		],
+		category: [ProjectCategories.utiliteitbouw],
+	},
+	{
+		title: 'Green Harbour',
+		description: 'Directievoering project Green Harbour 68 appartementen Den Haag',
+		images: [
+			{
+				src: greenharbour1,
+				alt: 'Green Harbour',
+			},
+			{
+				src: greenharbour2,
+				alt: 'Green Harbour',
+			},
+		],
+		category: [ProjectCategories.woningbouw],
+	},
 	{
 		title: 'Woningen Louis Armstrongweg Almere',
 		description: 'Studiobouwhaven verzorgd het projectmanagement en de kostenbegeleiding voor de transformatie van het kantoorgebouw naar woningen, aan de Louis Armstrongweg 2-16 in Almere. Start bouw is gepland oktober 2020.',

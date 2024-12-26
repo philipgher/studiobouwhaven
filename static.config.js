@@ -13,7 +13,7 @@ export default {
 		}));
 	},
 	plugins: [
-		require.resolve('react-static-plugin-sass'),
+		// require.resolve('react-static-plugin-sass'),
 		[
 			require.resolve('react-static-plugin-source-filesystem'),
 			{

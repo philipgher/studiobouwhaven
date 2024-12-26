@@ -1,7 +1,7 @@
 import React from 'react';
 import { Root, Routes } from 'react-static';
 import { Link, Router } from 'components/Router';
-import './app.scss';
+import './app.css';
 import logo from './content/img/studio bouwhaven.png';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
